@@ -103,7 +103,9 @@ func auth(w http.ResponseWriter, r *http.Request) {
 
 // home displays the add-to-slack button
 func home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">Add To Slack</a></body></html>`))
+	//	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">Add To Slack</a></body></html>`))
+	slackbutton := `<a href="https://slack.com/oauth/authorize?scope=incoming-webhook,commands,bot&client_id=2449357023.19259337137"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>`
+	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">Add To Slack</a> ` + slackbutton + `</body></html>`))
 }
 
 func main() {
