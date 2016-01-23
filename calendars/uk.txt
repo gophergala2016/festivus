@@ -1,0 +1,46 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-04	00:00	2016-01-05	00:00	2nd January (Scotland)
+2016-03-01	00:00	2016-03-02	00:00	St. David's Day (Wales)
+2016-03-17	00:00	2016-03-18	00:00	St Patrick's Day (Northern Ireland)
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-27	00:00	2016-03-28	00:00	Daylight Saving Time starts
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday (regional holiday)
+2016-04-23	00:00	2016-04-24	00:00	St. George's Day
+2016-05-02	00:00	2016-05-03	00:00	Early May Bank Holiday
+2016-05-09	00:00	2016-05-10	00:00	Liberation Day (regional holiday)
+2016-05-30	00:00	2016-05-31	00:00	Spring Bank Holiday
+2016-07-12	00:00	2016-07-13	00:00	Battle of the Boyne (Northern Ireland)
+2016-08-01	00:00	2016-08-02	00:00	Summer Bank Holiday (Scotland)
+2016-08-29	00:00	2016-08-30	00:00	Summer Bank Holiday (regional holiday)
+2016-10-30	00:00	2016-10-31	00:00	Daylight Saving Time ends
+2016-10-31	00:00	2016-11-01	00:00	Halloween
+2016-11-05	00:00	2016-11-06	00:00	Guy Fawkes Day
+2016-11-13	00:00	2016-11-14	00:00	Remembrance Sunday
+2016-11-30	00:00	2016-12-01	00:00	St Andrew's Day (Scotland)
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Boxing Day
+2016-12-27	00:00	2016-12-28	00:00	Bank Holiday
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	New Year's Day Holiday
+2017-01-02	00:00	2017-01-03	00:00	New Year's Day observed
+2017-01-03	00:00	2017-01-04	00:00	2nd January (Scotland)
+2017-03-01	00:00	2017-03-02	00:00	St. David's Day (Wales)
+2017-03-17	00:00	2017-03-18	00:00	St Patrick's Day (Northern Ireland)
+2017-03-26	00:00	2017-03-27	00:00	Daylight Saving Time starts
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday (regional holiday)
+2017-04-23	00:00	2017-04-24	00:00	St. George's Day
+2017-05-01	00:00	2017-05-02	00:00	Early May Bank Holiday
+2017-05-09	00:00	2017-05-10	00:00	Liberation Day (regional holiday)
+2017-05-29	00:00	2017-05-30	00:00	Spring Bank Holiday
+2017-07-12	00:00	2017-07-13	00:00	Battle of the Boyne (Northern Ireland)
+2017-08-07	00:00	2017-08-08	00:00	Summer Bank Holiday (Scotland)
+2017-08-28	00:00	2017-08-29	00:00	Summer Bank Holiday (regional holiday)
+2017-10-29	00:00	2017-10-30	00:00	Daylight Saving Time ends
+2017-10-31	00:00	2017-11-01	00:00	Halloween
+2017-11-05	00:00	2017-11-06	00:00	Guy Fawkes Day
+2017-11-12	00:00	2017-11-13	00:00	Remembrance Sunday
+2017-11-30	00:00	2017-12-01	00:00	St Andrew's Day (Scotland)
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Boxing Day
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day
