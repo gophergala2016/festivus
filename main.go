@@ -217,7 +217,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 // home displays the add-to-slack button
 func home(w http.ResponseWriter, r *http.Request) {
 	slackbutton := `<img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x">`
-	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">` + slackbutton + `</a></body></html>`))
+	w.Write([]byte(`<html><head><title>Slack OAuth</title></head><body><table style="height:100%; width: 100%; margin: 0; padding: 0; border: 0;"><tr><td style="vertical-align: middle; text-align: center;"><a href="/add">` + slackbutton + `</a></td></tr></table></body></html>`))
 }
 
 // https://festivus.nivas.hr/slack/festivus
