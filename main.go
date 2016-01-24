@@ -248,7 +248,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 			struct {
 				Text string `json:"text"`
 			}{
-				fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
+				fmt.Sprintf("%d days till Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
 			})
 
 		if err != nil {
@@ -328,7 +328,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 		tillDay := holidays.DaysBetween(time.Now(), d.Date())
 
-		sDays = fmt.Sprintf("%s\n%d days til *%s* (%s)", sDays, tillDay, d.Name(), d.Date().Format("02.01.2006."))
+		sDays = fmt.Sprintf("%s\n%d days till *%s* (%s)", sDays, tillDay, d.Name(), d.Date().Format("02.01.2006."))
 
 	}
 
