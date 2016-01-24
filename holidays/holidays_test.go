@@ -86,3 +86,15 @@ func TestNextFestivus(t *testing.T) {
 		)
 	}
 }
+
+func TestDaysToFestivus(t *testing.T) {
+	today := fakeDate(2016, 12, 20)
+	want := 3
+	if got := DaysToFestivus(today); got != want {
+		t.Errorf("DaysToFestivus (today: %v) = %v; want %v",
+			formatDate(today),
+			got,
+			want,
+		)
+	}
+}
