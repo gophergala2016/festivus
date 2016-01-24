@@ -238,7 +238,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 		w,
 		http.StatusOK,
 		struct {
-			text string
+			Text string `json:"text"`
 		}{
 			fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
 		})
