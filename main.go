@@ -62,7 +62,7 @@ func addToSlack(w http.ResponseWriter, r *http.Request) {
 		// incoming-webhook - post from your app to a single Slack channel.
 		// za rtm kazu da treba rtm:stream pa kazu da je unknown..hmm, probam sa client.
 		// Scopes:      []string{"commands", "bot", "chat:write:bot", "client"}, // za ovo javlja da mixam depresiated scopove argh...
-		Scopes:      []string{"client"}, // jel moguce da je "samo" ovo dovoljno
+		Scopes:      []string{"command", "client"}, // jel moguce da je "samo" "client" dovoljno?
 		RedirectURL: "https://festivus.nivas.hr/auth",
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  "https://slack.com/oauth/authorize",
