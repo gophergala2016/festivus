@@ -113,11 +113,15 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	log.Printf("%#v", test)
 
 	in := make(chan *slack.Message)
-	info, err = s.RTMStart("Your URL", in, nil)
+	info, err = s.RTMStart("", in, nil)
+	if err == nil {
+		log.Println("Reconnected...")
+	} else {
+		close(in)
+	}
 
 	currChannelID = channelID("gophergala")
 	postMessage("Hello world!")
-
 }
 
 func postMessage(msg string) {
