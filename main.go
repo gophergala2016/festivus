@@ -322,10 +322,11 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	}
 
 	days = holidays.ByYear(days, time.Now())
+	days = holidays.OnlyFuture(days, time.Now())
 
 	var sDays string
 	for _, d := range days {
-		sDays = fmt.Sprintf("%s\n%s", sDays, d.String())
+		sDays = fmt.Sprintf("%s\n%s %s", sDays, d.Date().Format("02.01.2016."), d.Name())
 	}
 
 	err = JSON(
