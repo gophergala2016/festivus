@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// New returns all holidays for country.
 func New(countryCode, path string) ([]Hday, error) {
 	p := fmt.Sprintf("%s/%s.txt", path, countryCode)
 	return parseFile(p)
