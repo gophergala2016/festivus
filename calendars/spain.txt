@@ -1,0 +1,116 @@
+2016-01-01	00:00	2016-01-02	00:00	Feast of the Holy Family
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-06	00:00	2016-01-07	00:00	Epiphany
+2016-02-10	00:00	2016-02-11	00:00	Ash Wednesday
+2016-02-28	00:00	2016-02-29	00:00	Day of Andalucía (Andalusia)
+2016-03-01	00:00	2016-03-02	00:00	Day of the Balearic Islands (Balearic Islands)
+2016-03-19	00:00	2016-03-20	00:00	San Jose (regional holiday)
+2016-03-20	00:00	2016-03-21	00:00	Palm Sunday
+2016-03-24	00:00	2016-03-25	00:00	Maundy Thursday (regional holiday)
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-27	00:00	2016-03-28	00:00	Daylight Saving Time starts
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday (regional holiday)
+2016-04-23	00:00	2016-04-24	00:00	Day of Aragón (Aragon)
+2016-04-23	00:00	2016-04-24	00:00	Castile and León Day (Castile-Leon)
+2016-04-23	00:00	2016-04-24	00:00	St George's Day (Catalonia)
+2016-05-01	00:00	2016-05-02	00:00	Labor Day / May Day
+2016-05-01	00:00	2016-05-02	00:00	Mothers' Day
+2016-05-02	00:00	2016-05-03	00:00	Labor Day observed (regional holiday)
+2016-05-02	00:00	2016-05-03	00:00	Day of Madrid (Madrid)
+2016-05-15	00:00	2016-05-16	00:00	Whit Sunday/Pentecost
+2016-05-15	00:00	2016-05-16	00:00	Feast Day of St Isidore (Madrid)
+2016-05-16	00:00	2016-05-17	00:00	Whit Monday (Barcelona)
+2016-05-17	00:00	2016-05-18	00:00	Galicia Literature Day (Galicia)
+2016-05-26	00:00	2016-05-27	00:00	Corpus Christi (regional holiday)
+2016-05-30	00:00	2016-05-31	00:00	Day of the Canary Islands (Canary Islands)
+2016-05-31	00:00	2016-06-01	00:00	Day of Castile-La Mancha (Castile-La Mancha)
+2016-05-31	00:00	2016-06-01	00:00	Canaries day observed (Canary Islands)
+2016-06-09	00:00	2016-06-10	00:00	Day of Murcia (Murcia)
+2016-06-09	00:00	2016-06-10	00:00	Day of La Rioja (La Rioja)
+2016-06-13	00:00	2016-06-14	00:00	San Antonio (Ceuta)
+2016-06-24	00:00	2016-06-25	00:00	Saint John the Baptist Day (regional holiday)
+2016-07-25	00:00	2016-07-26	00:00	Labor Day observed (La Rioja)
+2016-07-25	00:00	2016-07-26	00:00	Feast of Saint James the Apostle (regional holiday)
+2016-07-28	00:00	2016-07-29	00:00	Day of the Institutions (Cantabria)
+2016-08-05	00:00	2016-08-06	00:00	The Day of Our Lady of Africa (Ceuta)
+2016-08-14	00:00	2016-08-15	00:00	The Day of Cantabria (Cantabria)
+2016-08-15	00:00	2016-08-16	00:00	Assumption of Mary
+2016-09-02	00:00	2016-09-03	00:00	Day of the Independent City of Ceuta (Ceuta)
+2016-09-08	00:00	2016-09-09	00:00	Day of Asturias (Asturias)
+2016-09-08	00:00	2016-09-09	00:00	Day of Extremadura (Extremadura)
+2016-09-08	00:00	2016-09-09	00:00	Virgin of the Victory (Melilla)
+2016-09-11	00:00	2016-09-12	00:00	Day of Catalonia (Catalonia)
+2016-09-12	00:00	2016-09-13	00:00	Eid-al-Adha (Melilla)
+2016-09-13	00:00	2016-09-14	00:00	Eid-al-Adha (Ceuta)
+2016-09-15	00:00	2016-09-16	00:00	Nuestra Señora de la Bien Aparecida (Cantabria)
+2016-09-17	00:00	2016-09-18	00:00	Day of Melilla (Melilla)
+2016-10-07	00:00	2016-10-08	00:00	80th anniversary of the constitution of the Basque Government in Guernica (Basque Country)
+2016-10-09	00:00	2016-10-10	00:00	Day of the Valencian Community (Valencia)
+2016-10-12	00:00	2016-10-13	00:00	Hispanic Day
+2016-10-30	00:00	2016-10-31	00:00	Daylight Saving Time ends
+2016-11-01	00:00	2016-11-02	00:00	All Saints' Day (regional holiday)
+2016-12-03	00:00	2016-12-04	00:00	Day of Navarre (Navarre)
+2016-12-06	00:00	2016-12-07	00:00	Constitution Day (regional holiday)
+2016-12-08	00:00	2016-12-09	00:00	Immaculate Conception
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Christmas Day observed (regional holiday)
+2016-12-26	00:00	2016-12-27	00:00	St Stephen's Day (regional holiday)
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-01	00:00	2017-01-02	00:00	Feast of the Holy Family
+2017-01-06	00:00	2017-01-07	00:00	Epiphany
+2017-02-28	00:00	2017-03-01	00:00	Day of Andalucía (Andalusia)
+2017-03-01	00:00	2017-03-02	00:00	Ash Wednesday
+2017-03-01	00:00	2017-03-02	00:00	Day of the Balearic Islands (Balearic Islands)
+2017-03-19	00:00	2017-03-20	00:00	San Jose (regional holiday)
+2017-03-26	00:00	2017-03-27	00:00	Daylight Saving Time starts
+2017-04-09	00:00	2017-04-10	00:00	Palm Sunday
+2017-04-13	00:00	2017-04-14	00:00	Maundy Thursday (regional holiday)
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday (regional holiday)
+2017-04-23	00:00	2017-04-24	00:00	St George's Day (Catalonia)
+2017-04-23	00:00	2017-04-24	00:00	Castile and León Day (Castile-Leon)
+2017-04-24	00:00	2017-04-25	00:00	Day of Aragón (Aragon)
+2017-05-01	00:00	2017-05-02	00:00	Labor Day / May Day
+2017-05-02	00:00	2017-05-03	00:00	Day of Madrid (Madrid)
+2017-05-07	00:00	2017-05-08	00:00	Mothers' Day
+2017-05-15	00:00	2017-05-16	00:00	Feast Day of St Isidore (Madrid)
+2017-05-17	00:00	2017-05-18	00:00	Galicia Literature Day (Galicia)
+2017-05-30	00:00	2017-05-31	00:00	Day of the Canary Islands (Canary Islands)
+2017-05-31	00:00	2017-06-01	00:00	Canaries day observed (Canary Islands)
+2017-05-31	00:00	2017-06-01	00:00	Day of Castile-La Mancha (Castile-La Mancha)
+2017-06-04	00:00	2017-06-05	00:00	Whit Sunday/Pentecost
+2017-06-05	00:00	2017-06-06	00:00	Whit Monday (Barcelona)
+2017-06-09	00:00	2017-06-10	00:00	Day of La Rioja (La Rioja)
+2017-06-09	00:00	2017-06-10	00:00	Day of Murcia (Murcia)
+2017-06-13	00:00	2017-06-14	00:00	San Antonio (Ceuta)
+2017-06-15	00:00	2017-06-16	00:00	Corpus Christi (Madrid)
+2017-06-24	00:00	2017-06-25	00:00	Saint John the Baptist Day (Catalonia)
+2017-07-25	00:00	2017-07-26	00:00	Feast of Saint James the Apostle (regional holiday)
+2017-07-28	00:00	2017-07-29	00:00	Day of the Institutions (Cantabria)
+2017-08-05	00:00	2017-08-06	00:00	The Day of Our Lady of Africa (Ceuta)
+2017-08-13	00:00	2017-08-14	00:00	The Day of Cantabria (Cantabria)
+2017-08-15	00:00	2017-08-16	00:00	Assumption of Mary
+2017-09-02	00:00	2017-09-03	00:00	Day of the Independent City of Ceuta (Ceuta)
+2017-09-02	00:00	2017-09-03	00:00	Eid-al-Adha (Ceuta)
+2017-09-08	00:00	2017-09-09	00:00	Day of Asturias (Asturias)
+2017-09-08	00:00	2017-09-09	00:00	Virgin of the Victory (Melilla)
+2017-09-08	00:00	2017-09-09	00:00	Day of Extremadura (Extremadura)
+2017-09-11	00:00	2017-09-12	00:00	Day of Catalonia (Catalonia)
+2017-09-12	00:00	2017-09-13	00:00	Eid-al-Adha (Melilla)
+2017-09-15	00:00	2017-09-16	00:00	Nuestra Señora de la Bien Aparecida (Cantabria)
+2017-09-17	00:00	2017-09-18	00:00	Day of Melilla (Melilla)
+2017-10-09	00:00	2017-10-10	00:00	Day of the Valencian Community (Valencia)
+2017-10-12	00:00	2017-10-13	00:00	Hispanic Day
+2017-10-29	00:00	2017-10-30	00:00	Daylight Saving Time ends
+2017-11-01	00:00	2017-11-02	00:00	All Saints' Day (regional holiday)
+2017-12-03	00:00	2017-12-04	00:00	Day of Navarre (Navarre)
+2017-12-06	00:00	2017-12-07	00:00	Constitution Day (regional holiday)
+2017-12-08	00:00	2017-12-09	00:00	Immaculate Conception
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	St Stephen's Day (regional holiday)
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	Feast of the Holy Family
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

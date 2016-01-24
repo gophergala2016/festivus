@@ -1,0 +1,41 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-06	00:00	2016-01-07	00:00	Epiphany
+2016-03-14	00:00	2016-03-15	00:00	Green Monday
+2016-03-25	00:00	2016-03-26	00:00	Greek Independence Day
+2016-03-27	00:00	2016-03-28	00:00	Daylight Saving Time starts
+2016-04-01	00:00	2016-04-02	00:00	Cyprus National Holiday
+2016-04-29	00:00	2016-04-30	00:00	Good Friday (Orthodox)
+2016-04-30	00:00	2016-05-01	00:00	Holy Saturday (Orthodox)
+2016-05-01	00:00	2016-05-02	00:00	Easter Sunday (Orthodox)
+2016-05-01	00:00	2016-05-02	00:00	Labour Day/May Day
+2016-05-02	00:00	2016-05-03	00:00	Easter Monday (Orthodox)
+2016-06-20	00:00	2016-06-21	00:00	Orthodox Pentecost Monday
+2016-08-15	00:00	2016-08-16	00:00	Assumption of the Virgin Mary
+2016-10-01	00:00	2016-10-02	00:00	Cyprus Independence Day
+2016-10-28	00:00	2016-10-29	00:00	Ochi Day
+2016-10-30	00:00	2016-10-31	00:00	Daylight Saving Time ends
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Boxing Day
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-06	00:00	2017-01-07	00:00	Epiphany
+2017-02-27	00:00	2017-02-28	00:00	Green Monday
+2017-03-25	00:00	2017-03-26	00:00	Greek Independence Day
+2017-03-26	00:00	2017-03-27	00:00	Daylight Saving Time starts
+2017-04-01	00:00	2017-04-02	00:00	Cyprus National Holiday
+2017-04-14	00:00	2017-04-15	00:00	Good Friday (Orthodox)
+2017-04-15	00:00	2017-04-16	00:00	Holy Saturday (Orthodox)
+2017-04-16	00:00	2017-04-17	00:00	Easter Sunday (Orthodox)
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday (Orthodox)
+2017-05-01	00:00	2017-05-02	00:00	Labour Day/May Day
+2017-06-05	00:00	2017-06-06	00:00	Orthodox Pentecost Monday
+2017-08-15	00:00	2017-08-16	00:00	Assumption of the Virgin Mary
+2017-10-01	00:00	2017-10-02	00:00	Cyprus Independence Day
+2017-10-28	00:00	2017-10-29	00:00	Ochi Day
+2017-10-29	00:00	2017-10-30	00:00	Daylight Saving Time ends
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Boxing Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

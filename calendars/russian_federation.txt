@@ -1,0 +1,33 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-04	00:00	2016-01-05	00:00	New Year Holiday Week
+2016-01-05	00:00	2016-01-06	00:00	New Year Holiday Week
+2016-01-06	00:00	2016-01-07	00:00	New Year Holiday Week
+2016-01-07	00:00	2016-01-08	00:00	Orthodox Christmas Day
+2016-01-08	00:00	2016-01-09	00:00	New Year Holiday Week
+2016-02-23	00:00	2016-02-24	00:00	Defender of the Fatherland Day
+2016-02-27	00:00	2016-02-28	00:00	Special Operations Forces Day
+2016-03-07	00:00	2016-03-08	00:00	New Year Holiday Substitution
+2016-03-08	00:00	2016-03-09	00:00	International Women's Day
+2016-05-01	00:00	2016-05-02	00:00	Spring and Labor Day
+2016-05-02	00:00	2016-05-03	00:00	Spring and Labor Day observed
+2016-05-03	00:00	2016-05-04	00:00	New Year Holiday Substitution
+2016-05-09	00:00	2016-05-10	00:00	Victory Day
+2016-06-12	00:00	2016-06-13	00:00	Russia Day
+2016-06-13	00:00	2016-06-14	00:00	Russia Day observed
+2016-11-04	00:00	2016-11-05	00:00	Unity Day
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	New Year Holiday Week
+2017-01-03	00:00	2017-01-04	00:00	New Year Holiday Week
+2017-01-04	00:00	2017-01-05	00:00	New Year Holiday Week
+2017-01-05	00:00	2017-01-06	00:00	New Year Holiday Week
+2017-01-06	00:00	2017-01-07	00:00	New Year Holiday Week
+2017-01-07	00:00	2017-01-08	00:00	Orthodox Christmas Day
+2017-02-23	00:00	2017-02-24	00:00	Defender of the Fatherland Day
+2017-02-27	00:00	2017-02-28	00:00	Special Operations Forces Day
+2017-03-08	00:00	2017-03-09	00:00	International Women's Day
+2017-05-01	00:00	2017-05-02	00:00	Spring and Labor Day
+2017-05-09	00:00	2017-05-10	00:00	Victory Day
+2017-06-12	00:00	2017-06-13	00:00	Russia Day
+2017-11-04	00:00	2017-11-05	00:00	Unity Day
+2017-11-06	00:00	2017-11-07	00:00	Unity Day observed
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

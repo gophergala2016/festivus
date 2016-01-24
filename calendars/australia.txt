@@ -1,0 +1,72 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-26	00:00	2016-01-27	00:00	Australia Day
+2016-02-08	00:00	2016-02-09	00:00	Royal Hobart Regatta (Tasmania)
+2016-03-07	00:00	2016-03-08	00:00	Labour Day (Western Australia)
+2016-03-14	00:00	2016-03-15	00:00	Canberra Day (Australian Capital Territory)
+2016-03-14	00:00	2016-03-15	00:00	Adelaide Cup (South Australia)
+2016-03-14	00:00	2016-03-15	00:00	Labour Day (Victoria)
+2016-03-14	00:00	2016-03-15	00:00	Eight Hours Day (Tasmania)
+2016-03-21	00:00	2016-03-22	00:00	Harmony Day
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-26	00:00	2016-03-27	00:00	Holy Saturday (regional holiday)
+2016-03-27	00:00	2016-03-28	00:00	Easter Day (regional holiday)
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday
+2016-03-29	00:00	2016-03-30	00:00	Easter Tuesday (Tasmania)
+2016-04-03	00:00	2016-04-04	00:00	Daylight Saving Time ends
+2016-04-25	00:00	2016-04-26	00:00	ANZAC Day (regional holiday)
+2016-05-02	00:00	2016-05-03	00:00	May Day (regional holiday)
+2016-06-06	00:00	2016-06-07	00:00	Western Australia Day (Western Australia)
+2016-06-13	00:00	2016-06-14	00:00	Queen's Birthday (regional holiday)
+2016-08-01	00:00	2016-08-02	00:00	Northern Territory Picnic Day (Northern Territory)
+2016-08-01	00:00	2016-08-02	00:00	New South Wales Bank Holiday (New South Wales)
+2016-08-10	00:00	2016-08-11	00:00	Royal National Agricultural Show Day Queensland (Queensland)
+2016-09-26	00:00	2016-09-27	00:00	Family & Community Day (Australian Capital Territory)
+2016-09-26	00:00	2016-09-27	00:00	Queen's Birthday (Western Australia)
+2016-09-30	00:00	2016-10-01	00:00	AFL Grand Final Friday (Victoria)
+2016-10-02	00:00	2016-10-03	00:00	Daylight Saving Time starts
+2016-10-03	00:00	2016-10-04	00:00	Queen's Birthday (Queensland)
+2016-10-03	00:00	2016-10-04	00:00	Labour Day (regional holiday)
+2016-11-01	00:00	2016-11-02	00:00	Melbourne Cup Day (Victoria)
+2016-11-07	00:00	2016-11-08	00:00	Recreation Day (Tasmania)
+2016-11-11	00:00	2016-11-12	00:00	Remembrance Day
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Boxing Day
+2016-12-27	00:00	2016-12-28	00:00	Proclamation Day (South Australia)
+2016-12-27	00:00	2016-12-28	00:00	Christmas/Boxing Day Holiday (regional holiday)
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	New Year's Day observed
+2017-01-26	00:00	2017-01-27	00:00	Australia Day
+2017-02-13	00:00	2017-02-14	00:00	Royal Hobart Regatta (Tasmania)
+2017-03-06	00:00	2017-03-07	00:00	Labour Day (Western Australia)
+2017-03-13	00:00	2017-03-14	00:00	Adelaide Cup (South Australia)
+2017-03-13	00:00	2017-03-14	00:00	Canberra Day (Australian Capital Territory)
+2017-03-13	00:00	2017-03-14	00:00	Labour Day (Victoria)
+2017-03-13	00:00	2017-03-14	00:00	Eight Hours Day (Tasmania)
+2017-03-21	00:00	2017-03-22	00:00	Harmony Day
+2017-04-02	00:00	2017-04-03	00:00	Daylight Saving Time ends
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-15	00:00	2017-04-16	00:00	Holy Saturday (regional holiday)
+2017-04-16	00:00	2017-04-17	00:00	Easter Day (regional holiday)
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday
+2017-04-18	00:00	2017-04-19	00:00	Easter Tuesday (Tasmania)
+2017-04-25	00:00	2017-04-26	00:00	ANZAC Day (regional holiday)
+2017-05-01	00:00	2017-05-02	00:00	May Day (regional holiday)
+2017-06-05	00:00	2017-06-06	00:00	Western Australia Day (Western Australia)
+2017-06-12	00:00	2017-06-13	00:00	Queen's Birthday (regional holiday)
+2017-08-07	00:00	2017-08-08	00:00	New South Wales Bank Holiday (New South Wales)
+2017-08-07	00:00	2017-08-08	00:00	Northern Territory Picnic Day (Northern Territory)
+2017-08-16	00:00	2017-08-17	00:00	Royal National Agricultural Show Day Queensland (Queensland)
+2017-09-25	00:00	2017-09-26	00:00	Family & Community Day (Australian Capital Territory)
+2017-10-01	00:00	2017-10-02	00:00	Daylight Saving Time starts
+2017-10-02	00:00	2017-10-03	00:00	Labour Day (regional holiday)
+2017-10-02	00:00	2017-10-03	00:00	Queen's Birthday (regional holiday)
+2017-11-06	00:00	2017-11-07	00:00	Recreation Day (Tasmania)
+2017-11-07	00:00	2017-11-08	00:00	Melbourne Cup Day (Victoria)
+2017-11-11	00:00	2017-11-12	00:00	Remembrance Day
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Boxing Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

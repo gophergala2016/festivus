@@ -1,0 +1,41 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-08	00:00	2016-02-09	00:00	Chinese Lunar New Year's Day
+2016-02-09	00:00	2016-02-10	00:00	Second day of Chinese Lunar New Year
+2016-02-10	00:00	2016-02-11	00:00	Third day of Chinese Lunar New Year
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-26	00:00	2016-03-27	00:00	Holy Saturday
+2016-03-27	00:00	2016-03-28	00:00	Easter Sunday
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday
+2016-04-04	00:00	2016-04-05	00:00	Ching Ming Festival
+2016-05-01	00:00	2016-05-02	00:00	Labour Day
+2016-05-02	00:00	2016-05-03	00:00	Labour Day observed
+2016-05-14	00:00	2016-05-15	00:00	Buddha's Birthday
+2016-06-09	00:00	2016-06-10	00:00	Dragon Boat Festival
+2016-07-01	00:00	2016-07-02	00:00	Hong Kong Special Administrative Region Establishment Day
+2016-09-16	00:00	2016-09-17	00:00	Day after Mid-Autumn Festival
+2016-10-01	00:00	2016-10-02	00:00	National Day of the People's Republic of China
+2016-10-10	00:00	2016-10-11	00:00	Chung Yeung Festival
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Boxing Day
+2016-12-27	00:00	2016-12-28	00:00	Christmas Day observed
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	New Year's Day observed
+2017-01-28	00:00	2017-01-29	00:00	Chinese Lunar New Year's Day
+2017-01-30	00:00	2017-01-31	00:00	Second day of Chinese Lunar New Year
+2017-01-31	00:00	2017-02-01	00:00	Third day of Chinese Lunar New Year
+2017-04-05	00:00	2017-04-06	00:00	Ching Ming Festival
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-15	00:00	2017-04-16	00:00	Holy Saturday
+2017-04-16	00:00	2017-04-17	00:00	Easter Sunday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday
+2017-05-01	00:00	2017-05-02	00:00	Labour Day
+2017-05-03	00:00	2017-05-04	00:00	Buddha's Birthday
+2017-05-30	00:00	2017-05-31	00:00	Dragon Boat Festival
+2017-07-01	00:00	2017-07-02	00:00	Hong Kong Special Administrative Region Establishment Day
+2017-10-01	00:00	2017-10-02	00:00	National Day of the People's Republic of China
+2017-10-02	00:00	2017-10-03	00:00	National Day of the People's Republic of China observed
+2017-10-05	00:00	2017-10-06	00:00	Day after Mid-Autumn Festival
+2017-10-28	00:00	2017-10-29	00:00	Chung Yeung Festival
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Boxing Day
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

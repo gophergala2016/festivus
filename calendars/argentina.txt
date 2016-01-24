@@ -1,0 +1,43 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-08	00:00	2016-02-09	00:00	Carnival
+2016-02-09	00:00	2016-02-10	00:00	Carnival/Shrove Tuesday
+2016-03-24	00:00	2016-03-25	00:00	Memorial Day
+2016-03-24	00:00	2016-03-25	00:00	Maundy Thursday
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-27	00:00	2016-03-28	00:00	Easter Day
+2016-04-02	00:00	2016-04-03	00:00	Day of the Veterans
+2016-04-23	00:00	2016-04-24	00:00	First day of Passover
+2016-04-24	00:00	2016-04-25	00:00	Action Day for Tolerance and Respect between People
+2016-04-30	00:00	2016-05-01	00:00	Last day of Passover
+2016-05-01	00:00	2016-05-02	00:00	Labor Day / May Day
+2016-05-25	00:00	2016-05-26	00:00	National Day/May 1810 Revolution
+2016-06-20	00:00	2016-06-21	00:00	Flag Day
+2016-07-09	00:00	2016-07-10	00:00	Independence day
+2016-08-15	00:00	2016-08-16	00:00	San Martín Day
+2016-10-10	00:00	2016-10-11	00:00	Day of respect for cultural diversity
+2016-11-28	00:00	2016-11-29	00:00	National Sovereignty Day
+2016-12-08	00:00	2016-12-09	00:00	Feast of the Immaculate Conception
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-02-27	00:00	2017-02-28	00:00	Carnival
+2017-02-28	00:00	2017-03-01	00:00	Carnival/Shrove Tuesday
+2017-03-24	00:00	2017-03-25	00:00	Memorial Day
+2017-04-02	00:00	2017-04-03	00:00	Day of the Veterans
+2017-04-11	00:00	2017-04-12	00:00	First day of Passover
+2017-04-13	00:00	2017-04-14	00:00	Maundy Thursday
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-16	00:00	2017-04-17	00:00	Easter Day
+2017-04-18	00:00	2017-04-19	00:00	Last day of Passover
+2017-04-24	00:00	2017-04-25	00:00	Action Day for Tolerance and Respect between People
+2017-05-01	00:00	2017-05-02	00:00	Labor Day / May Day
+2017-05-25	00:00	2017-05-26	00:00	National Day/May 1810 Revolution
+2017-06-20	00:00	2017-06-21	00:00	Flag Day
+2017-07-09	00:00	2017-07-10	00:00	Independence day
+2017-08-21	00:00	2017-08-22	00:00	San Martín Day
+2017-10-09	00:00	2017-10-10	00:00	Day of respect for cultural diversity
+2017-11-27	00:00	2017-11-28	00:00	National Sovereignty Day
+2017-12-08	00:00	2017-12-09	00:00	Feast of the Immaculate Conception
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

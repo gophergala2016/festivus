@@ -1,0 +1,35 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-01	00:00	2016-02-02	00:00	Day off for Constitution Day
+2016-02-05	00:00	2016-02-06	00:00	Constitution Day
+2016-02-10	00:00	2016-02-11	00:00	Ash Wednesday
+2016-03-20	00:00	2016-03-21	00:00	Palm Sunday
+2016-03-21	00:00	2016-03-22	00:00	Benito Juárez's Birthday Memorial
+2016-03-26	00:00	2016-03-27	00:00	Holy Saturday
+2016-03-27	00:00	2016-03-28	00:00	Easter Day
+2016-05-01	00:00	2016-05-02	00:00	Labor Day / May Day
+2016-05-05	00:00	2016-05-06	00:00	Cinco de Mayo
+2016-09-16	00:00	2016-09-17	00:00	Independence Day
+2016-10-12	00:00	2016-10-13	00:00	Columbus Day
+2016-11-02	00:00	2016-11-03	00:00	All Souls' Day
+2016-11-20	00:00	2016-11-21	00:00	Revolution Day Memorial
+2016-11-21	00:00	2016-11-22	00:00	Day off for Revolution Day Memorial
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-02-05	00:00	2017-02-06	00:00	Constitution Day
+2017-02-06	00:00	2017-02-07	00:00	Day off for Constitution Day
+2017-03-01	00:00	2017-03-02	00:00	Ash Wednesday
+2017-03-20	00:00	2017-03-21	00:00	Day off for Benito Juárez's Birthday Memorial
+2017-03-21	00:00	2017-03-22	00:00	Benito Juárez's Birthday Memorial
+2017-04-09	00:00	2017-04-10	00:00	Palm Sunday
+2017-04-15	00:00	2017-04-16	00:00	Holy Saturday
+2017-04-16	00:00	2017-04-17	00:00	Easter Day
+2017-05-01	00:00	2017-05-02	00:00	Labor Day / May Day
+2017-05-05	00:00	2017-05-06	00:00	Cinco de Mayo
+2017-09-16	00:00	2017-09-17	00:00	Independence Day
+2017-10-12	00:00	2017-10-13	00:00	Columbus Day
+2017-11-02	00:00	2017-11-03	00:00	All Souls' Day
+2017-11-20	00:00	2017-11-21	00:00	Revolution Day Memorial
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

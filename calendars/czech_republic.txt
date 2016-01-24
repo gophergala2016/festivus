@@ -1,0 +1,30 @@
+2016-01-01	00:00	2016-01-02	00:00	Restoration of the Czech Independence Day
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday
+2016-05-01	00:00	2016-05-02	00:00	Labor Day / May Day
+2016-05-08	00:00	2016-05-09	00:00	Victory in Europe Day
+2016-07-05	00:00	2016-07-06	00:00	Saints Cyril and Methodius
+2016-07-06	00:00	2016-07-07	00:00	Jan Hus Day
+2016-09-28	00:00	2016-09-29	00:00	St. Wenceslas Day
+2016-10-28	00:00	2016-10-29	00:00	Independent Czechoslovak State Day
+2016-11-17	00:00	2016-11-18	00:00	Struggle for Freedom and Democracy Day
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	St. Stephen's Day
+2017-01-01	00:00	2017-01-02	00:00	Restoration of the Czech Independence Day
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday
+2017-05-01	00:00	2017-05-02	00:00	Labor Day / May Day
+2017-05-08	00:00	2017-05-09	00:00	Victory in Europe Day
+2017-07-05	00:00	2017-07-06	00:00	Saints Cyril and Methodius
+2017-07-06	00:00	2017-07-07	00:00	Jan Hus Day
+2017-09-28	00:00	2017-09-29	00:00	St. Wenceslas Day
+2017-10-28	00:00	2017-10-29	00:00	Independent Czechoslovak State Day
+2017-11-17	00:00	2017-11-18	00:00	Struggle for Freedom and Democracy Day
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	St. Stephen's Day
+2018-01-01	00:00	2018-01-02	00:00	Restoration of the Czech Independence Day
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

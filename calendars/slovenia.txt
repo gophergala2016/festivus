@@ -1,0 +1,37 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-08	00:00	2016-02-09	00:00	Prešeren Day
+2016-03-27	00:00	2016-03-28	00:00	Easter Day
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday
+2016-04-27	00:00	2016-04-28	00:00	Day of Uprising Against Occupation
+2016-05-01	00:00	2016-05-02	00:00	Labor Day / May Day
+2016-05-02	00:00	2016-05-03	00:00	Labour Day holiday
+2016-05-15	00:00	2016-05-16	00:00	Whit Sunday
+2016-06-25	00:00	2016-06-26	00:00	Statehood Day
+2016-08-15	00:00	2016-08-16	00:00	Assumption of Mary
+2016-08-17	00:00	2016-08-18	00:00	Slovenians in Prekmurje Incorporated into the Mother Nation Day
+2016-09-15	00:00	2016-09-16	00:00	Restoration of Primorska to the Motherland Day
+2016-10-25	00:00	2016-10-26	00:00	Sovereignty Day
+2016-10-31	00:00	2016-11-01	00:00	Reformation Day
+2016-11-01	00:00	2016-11-02	00:00	Remembrance Day
+2016-11-23	00:00	2016-11-24	00:00	Rudolf Maister Day
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Independence and Unity Day
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-02-08	00:00	2017-02-09	00:00	Prešeren Day
+2017-04-16	00:00	2017-04-17	00:00	Easter Day
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday
+2017-04-27	00:00	2017-04-28	00:00	Day of Uprising Against Occupation
+2017-05-01	00:00	2017-05-02	00:00	Labor Day / May Day
+2017-05-02	00:00	2017-05-03	00:00	Labour Day holiday
+2017-06-04	00:00	2017-06-05	00:00	Whit Sunday
+2017-06-25	00:00	2017-06-26	00:00	Statehood Day
+2017-08-15	00:00	2017-08-16	00:00	Assumption of Mary
+2017-08-17	00:00	2017-08-18	00:00	Slovenians in Prekmurje Incorporated into the Mother Nation Day
+2017-09-15	00:00	2017-09-16	00:00	Restoration of Primorska to the Motherland Day
+2017-10-25	00:00	2017-10-26	00:00	Sovereignty Day
+2017-10-31	00:00	2017-11-01	00:00	Reformation Day
+2017-11-01	00:00	2017-11-02	00:00	Remembrance Day
+2017-11-23	00:00	2017-11-24	00:00	Rudolf Maister Day
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Independence and Unity Day
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day
