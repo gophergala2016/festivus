@@ -9,6 +9,7 @@ import (
 	"math"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/demisto/slack"
@@ -63,6 +64,13 @@ func addToSlack(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, url, http.StatusFound)
 }
 
+var (
+	s             *slack.Slack
+	info          *slack.RTMStartReply // The global info for the team
+	currChannelID string               // The ID of the channel
+	files         []slack.File         // The files for the team
+)
+
 // auth receives the callback from Slack, validates and displays the user information
 func auth(w http.ResponseWriter, r *http.Request) {
 	state := r.FormValue("state")
@@ -90,7 +98,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 401, err.Error())
 		return
 	}
-	s, err := slack.New(slack.SetToken(token.AccessToken))
+	s, err = slack.New(slack.SetToken(token.AccessToken))
 	if err != nil {
 		writeError(w, 500, err.Error())
 		return
@@ -103,6 +111,101 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	}
 	w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
 	log.Printf("%#v", test)
+
+	in := make(chan *slack.Message)
+	info, err = s.RTMStart("Your URL", in, nil)
+
+	currChannelID = "gophergala"
+	postMessage("Hello world!")
+
+}
+
+func postMessage(msg string) {
+	m := &slack.PostMessageRequest{
+		AsUser:  true,
+		Channel: currChannelID,
+		Text:    msg,
+	}
+	_, err := s.PostMessage(m, true)
+	if err != nil {
+		fmt.Printf("Unable to post to channel %s - %v\n", channelName(currChannelID), err)
+	}
+}
+func channelID(ch string) string {
+	// First, let's see if the given ch is actually already an ID
+	name := channelName(ch)
+	if name != "" {
+		return ch
+	}
+	for i := range info.Channels {
+		if strings.ToLower(info.Channels[i].Name) == strings.ToLower(ch) {
+			return info.Channels[i].ID
+		}
+	}
+	for i := range info.Groups {
+		if strings.ToLower(info.Groups[i].Name) == strings.ToLower(ch) {
+			return info.Groups[i].ID
+		}
+	}
+	for i := range info.IMS {
+		if strings.ToLower(userNameByID(info.IMS[i].User)) == strings.ToLower(ch) {
+			return info.IMS[i].ID
+		}
+	}
+	return ""
+}
+func channelName(ch string) string {
+	if ch == "" {
+		return ""
+	}
+	switch ch[0] {
+	case 'C':
+		for i := range info.Channels {
+			if info.Channels[i].ID == ch {
+				return info.Channels[i].Name
+			}
+		}
+	case 'G':
+		for i := range info.Groups {
+			if info.Groups[i].ID == ch {
+				return info.Groups[i].Name
+			}
+		}
+	case 'D':
+		for i := range info.IMS {
+			if info.IMS[i].ID == ch {
+				return userNameByID(info.IMS[i].User)
+			}
+		}
+	}
+	return ""
+}
+
+// userNameByID if user is not found then just use ID
+func userNameByID(id string) string {
+	uname := id
+	u := findUser(id)
+	if u != nil {
+		uname = u.Name
+	}
+	return uname
+}
+func findUser(id string) *slack.User {
+	for i := range info.Users {
+		if info.Users[i].ID == id {
+			return &info.Users[i]
+		}
+	}
+	return nil
+}
+
+func switchChannel(ch string) bool {
+	id := channelID(ch)
+	if id != "" {
+		currChannelID = id
+		return true
+	}
+	return false
 }
 
 // home displays the add-to-slack button
