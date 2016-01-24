@@ -44,12 +44,21 @@ func TestParseDate(t *testing.T) {
 	}
 }
 
-func TestFileScanner(t *testing.T) {
-	in := "testdata/hr.txt"
-	if _, err := fileScanner(in); err != nil {
-		t.Errorf("fileScanner(%q) = _, %v; want nil", in, err)
+func TestDaysBetween(t *testing.T) {
+	since := fakeDate(2012, 2, 3)
+	var tests = []struct {
+		now  time.Time
+		want int
+	}{
+		{fakeDate(2014, 3, 21), 777},
+		{fakeDate(2014, 7, 10), 888},
+		{fakeDate(2014, 10, 29), 999},
 	}
-	if _, err := fileScanner("invalidpath"); err == nil {
-		t.Error("fileScanner(\"invalidpath\") = _, <nil>; want error")
+	for _, tt := range tests {
+		if got := DaysBetween(since, tt.now); got != tt.want {
+			t.Errorf("DaysBetween(%v, %v) = %v; want %v",
+				formatDate(since),
+				formatDate(tt.now), got, tt.want)
+		}
 	}
 }

@@ -1,9 +1,7 @@
 package holidays
 
 import (
-	"bufio"
-	"bytes"
-	"io/ioutil"
+	"math"
 	"time"
 )
 
@@ -21,11 +19,11 @@ func parseDate(s string) (time.Time, error) {
 	return midnight(d), err
 }
 
-// fileScanner converts file content to scanner.
-func fileScanner(path string) (*bufio.Scanner, error) {
-	c, err := ioutil.ReadFile(path)
-	if err != nil {
-		return nil, err
-	}
-	return bufio.NewScanner(bytes.NewReader(c)), nil
+// DaysBetween returns days between dates.
+func DaysBetween(from, to time.Time) int {
+	from = midnight(from)
+	to = midnight(to)
+	// convert diff hours to days
+	d := to.Sub(from).Hours() / 24
+	return int(math.Abs(d))
 }
