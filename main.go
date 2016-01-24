@@ -3,6 +3,7 @@ package main
 import (
 	"crypto/rand"
 	"encoding/hex"
+	"encoding/json"
 	"flag"
 	"fmt"
 	"log"
@@ -21,6 +22,11 @@ var (
 	address      = flag.String("address", ":2016", "Which address should I listen on")
 	clientID     = flag.String("client_id", "", "The client ID from https://api.slack.com/applications")
 	clientSecret = flag.String("client_secret", "", "The client secret from https://api.slack.com/applications")
+
+	CharsetUTF8                = "charset=utf-8"
+	ApplicationJSON            = "application/json"
+	ApplicationJSONCharsetUTF8 = ApplicationJSON + "; " + CharsetUTF8
+	ContentType                = "Content-Type"
 )
 
 type state struct {
@@ -52,9 +58,11 @@ func addToSlack(w http.ResponseWriter, r *http.Request) {
 		ClientID:     *clientID,
 		ClientSecret: *clientSecret,
 		// Scopes:       []string{"client"}, // special scope (!) - Allows applications to connect to slack as a client, and post messages on behalf of the user.
+		// scope=incoming-webhook,commands,bot
 		// incoming-webhook - post from your app to a single Slack channel.
 		// za rtm kazu da treba rtm:stream pa kazu da je unknown..hmm, probam sa client.
-		Scopes:      []string{"commands", "bot", "chat:write:bot", "client"},
+		// Scopes:      []string{"commands", "bot", "chat:write:bot", "client"}, // za ovo javlja da mixam depresiated scopove argh...
+		Scopes:      []string{"client"}, // jel moguce da je "samo" ovo dovoljno
 		RedirectURL: "https://festivus.nivas.hr/auth",
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  "https://slack.com/oauth/authorize",
@@ -203,8 +211,16 @@ func home(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">` + slackbutton + `</a></body></html>`))
 }
 
+// https://festivus.nivas.hr/slack/festivus
 func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte(`hello world`))
+
+	err := JSON(w, http.StatusOK, "SendQuote fired, sir.")
+	if err != nil {
+		writeError(w, 500, err.Error())
+		return
+	}
+
 }
 
 func main() {
@@ -222,6 +238,17 @@ Usage: ./festivus --address ":2016" --client_id "YOUR_ID" --client_secret "YOUR_
 	http.HandleFunc("/auth", auth)
 	http.HandleFunc("/", home)
 	log.Fatal(http.ListenAndServe(*address, nil))
+}
+
+func JSON(w http.ResponseWriter, code int, i interface{}) (err error) {
+	b, err := json.Marshal(i)
+	if err != nil {
+		return err
+	}
+	w.Header().Set(ContentType, ApplicationJSONCharsetUTF8)
+	w.WriteHeader(code)
+	w.Write(b)
+	return
 }
 
 // DaysBetween returns days between dates.
