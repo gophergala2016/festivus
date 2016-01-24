@@ -132,6 +132,8 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	}
 	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
 
+	w.Write([]byte(fmt.Sprintf("OAuth successful for team. lets output something for slack and block execution ... ")))
+
 	rtm := api.NewRTM()
 	go rtm.ManageConnection()
 
@@ -213,9 +215,21 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 // https://festivus.nivas.hr/slack/festivus
 func festivusCmd(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte(`hello world`))
+	// w.Write([]byte(`hello world`))
 
-	err := JSON(w, http.StatusOK, "SendQuote fired, sir.")
+	// response_type is in_channel, both the response message and the initial message typed by the user will be shared in the channel
+	// response_type to ephemeral is the same as not including the response type at all, and the response message will be visible only to the user that issued the command
+	// {
+	//     "response_type": "in_channel",
+	//     "text": "It's 80 degrees right now.",
+	//     "attachments": [
+	//         {
+	//             "text":"Partly cloudy today and tomorrow"
+	//         }
+	//     ]
+	// }
+
+	err := JSON(w, http.StatusOK, "festivusCmd fired, sir.")
 	if err != nil {
 		writeError(w, 500, err.Error())
 		return
