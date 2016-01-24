@@ -98,39 +98,110 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	// If you set debugging, it will log all requests to the console
 	// Useful when encountering issues
 	api.SetDebug(true)
-	groups, err := api.GetGroups(false)
+
+	params := slack.PostMessageParameters{}
+	attachment := slack.Attachment{
+		Pretext: "some pretext",
+		Text:    "some text",
+		// Uncomment the following part to send a field too
+		/*
+			Fields: []slack.AttachmentField{
+				slack.AttachmentField{
+					Title: "a",
+					Value: "no",
+				},
+			},
+		*/
+	}
+	params.Attachments = []slack.Attachment{attachment}
+	channelID, timestamp, err := api.PostMessage("C0JAT1RHS", "Hello world", params)
 	if err != nil {
 		fmt.Printf("%s\n", err)
 		return
 	}
-	for _, group := range groups {
-		fmt.Printf("Id: %s, Name: %s\n", group.ID, group.Name)
+	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
+
+	rtm := api.NewRTM()
+	go rtm.ManageConnection()
+
+Loop:
+	for {
+		select {
+		case msg := <-rtm.IncomingEvents:
+			fmt.Print("Event Received: ")
+			switch ev := msg.Data.(type) {
+			case *slack.HelloEvent:
+				// Ignore hello
+
+			case *slack.ConnectedEvent:
+				fmt.Println("Infos:", ev.Info)
+				fmt.Println("Connection counter:", ev.ConnectionCount)
+				// Replace #general with your Channel ID
+				rtm.SendMessage(rtm.NewOutgoingMessage("Hello world", "#general"))
+
+			case *slack.MessageEvent:
+				fmt.Printf("Message: %v\n", ev)
+
+			case *slack.PresenceChangeEvent:
+				fmt.Printf("Presence Change: %v\n", ev)
+
+			case *slack.LatencyReport:
+				fmt.Printf("Current latency: %v\n", ev.Value)
+
+			case *slack.RTMError:
+				fmt.Printf("Error: %s\n", ev.Error())
+
+			case *slack.InvalidAuthEvent:
+				fmt.Printf("Invalid credentials")
+				break Loop
+
+			default:
+
+				// Ignore other events..
+				// fmt.Printf("Unexpected: %v\n", msg.Data)
+			}
+		}
 	}
 
-	// token, err := slack.OAuthAccess(*clientID, *clientSecret, code, "")
-	// if err != nil {
-	// 	writeError(w, 401, err.Error())
-	// 	return
-	// }
-	// s, err := slack.New(slack.SetToken(token.AccessToken))
-	// if err != nil {
-	// 	writeError(w, 500, err.Error())
-	// 	return
-	// }
-	// // Get our own user id
-	// test, err := s.AuthTest()
-	// if err != nil {
-	// 	writeError(w, 500, err.Error())
-	// 	return
-	// }
-	// w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
-	// log.Printf("%#v", test)
 }
+
+// RADI od prve, ali baca missing_scope","needed":"groups:read",
+// groups, err := api.GetGroups(false)
+// if err != nil {
+// 	fmt.Printf("%s\n", err)
+// 	return
+// }
+// for _, group := range groups {
+// 	fmt.Printf("Id: %s, Name: %s\n", group.ID, group.Name)
+// }
+
+// token, err := slack.OAuthAccess(*clientID, *clientSecret, code, "")
+// if err != nil {
+// 	writeError(w, 401, err.Error())
+// 	return
+// }
+// s, err := slack.New(slack.SetToken(token.AccessToken))
+// if err != nil {
+// 	writeError(w, 500, err.Error())
+// 	return
+// }
+// // Get our own user id
+// test, err := s.AuthTest()
+// if err != nil {
+// 	writeError(w, 500, err.Error())
+// 	return
+// }
+// w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
+// log.Printf("%#v", test)
 
 // home displays the add-to-slack button
 func home(w http.ResponseWriter, r *http.Request) {
 	slackbutton := `<img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x">`
 	w.Write([]byte(`<html><head><title>Slack OAuth Test</title></head><body><a href="/add">` + slackbutton + `</a></body></html>`))
+}
+
+func festivusCmd(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte(`hello world`))
 }
 
 func main() {
@@ -143,6 +214,7 @@ Usage: ./festivus --address ":2016" --client_id "YOUR_ID" --client_secret "YOUR_
 `)
 		os.Exit(1)
 	}
+	http.HandleFunc("/slack/festivus", festivusCmd)
 	http.HandleFunc("/add", addToSlack)
 	http.HandleFunc("/auth", auth)
 	http.HandleFunc("/", home)
