@@ -294,7 +294,6 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	}
 
 	calPath := curDir + "/calendars/" + countryCode + ".txt"
-	log.Printf("cal path %q", calPath)
 
 	if _, err := os.Stat(calPath); err != nil && os.IsNotExist(err) {
 		err := JSON(
@@ -321,6 +320,8 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 		return
 	}
+
+	days = holidays.ByYear(days, time.Now())
 
 	var sDays string
 	for _, d := range days {

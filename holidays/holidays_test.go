@@ -18,6 +18,17 @@ func formatDate(date time.Time) string {
 	return date.Format(ISO8601DateFormat)
 }
 
+func TestNew(t *testing.T) {
+	got, _ := New("hr", "testdata")
+	want := 29
+	if len(got) != want {
+		t.Errorf("len(New(hr, testdata)) = %v; want %v",
+			len(got),
+			want,
+		)
+	}
+}
+
 func TestMidnight(t *testing.T) {
 	in := time.Date(2016, 1, 23, 1, 2, 3, 4, time.UTC)
 	want := time.Date(2016, 1, 23, 0, 0, 0, 0, time.UTC)
@@ -68,7 +79,7 @@ func TestNextFestivus(t *testing.T) {
 	today := fakeDate(2016, 12, 20)
 	want := fakeDate(2016, 12, 23)
 	if got := NextFestivus(today); got != want {
-		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+		t.Errorf("NextFestivus(today: %v) = %v; want %v",
 			formatDate(today),
 			formatDate(got),
 			formatDate(want),
@@ -79,10 +90,35 @@ func TestNextFestivus(t *testing.T) {
 	today = fakeDate(2016, 12, 29)
 	want = fakeDate(2017, 12, 23)
 	if got := NextFestivus(today); got != want {
-		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+		t.Errorf("NextFestivus(today: %v) = %v; want %v",
 			formatDate(today),
 			formatDate(got),
 			formatDate(want),
+		)
+	}
+}
+
+func TestDaysToFestivus(t *testing.T) {
+	today := fakeDate(2016, 12, 20)
+	want := 3
+	if got := DaysToFestivus(today); got != want {
+		t.Errorf("DaysToFestivus(today: %v) = %v; want %v",
+			formatDate(today),
+			got,
+			want,
+		)
+	}
+}
+
+func TestByYear(t *testing.T) {
+	all, _ := New("hr", "testdata")
+	today := fakeDate(2016, 12, 20)
+	want := 14
+	if got := ByYear(all, today); len(got) != want {
+		t.Errorf("len(ByYear(all, today: %v)) = %v; want %v",
+			formatDate(today),
+			len(got),
+			want,
 		)
 	}
 }
