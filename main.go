@@ -53,7 +53,7 @@ func addToSlack(w http.ResponseWriter, r *http.Request) {
 		ClientSecret: *clientSecret,
 		// Scopes:       []string{"client"}, // special scope (!) - Allows applications to connect to slack as a client, and post messages on behalf of the user.
 		// incoming-webhook - post from your app to a single Slack channel.
-		Scopes:      []string{"commands", "bot", "chat:write:bot"},
+		Scopes:      []string{"commands", "bot", "chat:write:bot", "rtm:stream"},
 		RedirectURL: "https://festivus.nivas.hr/auth",
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  "https://slack.com/oauth/authorize",
@@ -89,7 +89,8 @@ func auth(w http.ResponseWriter, r *http.Request) {
 
 	token, scope, err := slack.GetOAuthToken(*clientID, *clientSecret, code, "", true)
 	if err != nil {
-		writeError(w, 401, err.Error())
+		// writeError(w, 401, err.Error())
+		writeError(w, 500, err.Error())
 		return
 	}
 	log.Println("got:", token, scope)
