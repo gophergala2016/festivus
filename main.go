@@ -115,7 +115,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	in := make(chan *slack.Message)
 	info, err = s.RTMStart("Your URL", in, nil)
 
-	currChannelID = "gophergala"
+	currChannelID = channelID("gophergala")
 	postMessage("Hello world!")
 
 }
