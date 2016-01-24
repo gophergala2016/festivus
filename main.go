@@ -11,7 +11,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/demisto/slack"
+	// "github.com/demisto/slack"
+	"github.com/nlopes/slack"
 
 	"golang.org/x/oauth2"
 )
@@ -85,24 +86,45 @@ func auth(w http.ResponseWriter, r *http.Request) {
 		writeError(w, 403, "State is too old")
 		return
 	}
-	token, err := slack.OAuthAccess(*clientID, *clientSecret, code, "")
+
+	token, scope, err := slack.GetOAuthToken(*clientID, *clientSecret, code, "", true)
 	if err != nil {
 		writeError(w, 401, err.Error())
 		return
 	}
-	s, err := slack.New(slack.SetToken(token.AccessToken))
+	log.Println("got:", token, scope)
+
+	api := slack.New(token)
+	// If you set debugging, it will log all requests to the console
+	// Useful when encountering issues
+	api.SetDebug(true)
+	groups, err := api.GetGroups(false)
 	if err != nil {
-		writeError(w, 500, err.Error())
+		fmt.Printf("%s\n", err)
 		return
 	}
-	// Get our own user id
-	test, err := s.AuthTest()
-	if err != nil {
-		writeError(w, 500, err.Error())
-		return
+	for _, group := range groups {
+		fmt.Printf("Id: %s, Name: %s\n", group.ID, group.Name)
 	}
-	w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
-	log.Printf("%#v", test)
+
+	// token, err := slack.OAuthAccess(*clientID, *clientSecret, code, "")
+	// if err != nil {
+	// 	writeError(w, 401, err.Error())
+	// 	return
+	// }
+	// s, err := slack.New(slack.SetToken(token.AccessToken))
+	// if err != nil {
+	// 	writeError(w, 500, err.Error())
+	// 	return
+	// }
+	// // Get our own user id
+	// test, err := s.AuthTest()
+	// if err != nil {
+	// 	writeError(w, 500, err.Error())
+	// 	return
+	// }
+	// w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
+	// log.Printf("%#v", test)
 }
 
 // home displays the add-to-slack button
