@@ -51,3 +51,20 @@ func DaysToFestivus(today time.Time) int {
 	nf := NextFestivus(today)
 	return DaysBetween(today, nf)
 }
+
+// ByYear filter holidays by year.
+func ByYear(hlds []Hday, today time.Time) []Hday {
+	year := today.Year()
+	all := []Hday{}
+	for _, h := range hlds {
+		hy := h.Date().Year()
+		if hy < year {
+			continue
+		}
+		if hy > year {
+			break
+		}
+		all = append(all, h)
+	}
+	return all
+}
