@@ -265,10 +265,19 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 		log.Fatal("Cant get list of locales. Exiting.")
 	}
 
-	helpTxt := "List of available holiday locales:\n"
-	for _, loc := range availableLocaleList {
-		helpTxt += fmt.Sprintf("/festivus %s\n", loc)
+	var cl string
+	for i, loc := range availableLocaleList {
+		if i == 0 {
+			cl = fmt.Sprintf("%s", loc)
+		} else {
+			cl = fmt.Sprintf("%s, %s", cl, loc)
+		}
 	}
+	helpTxt := fmt.Sprintf(`
+/festivus will tell you when the grate Festivus holiday is.
+/festivus xx will list holiday's for country (xx is local country code)
+List of available holiday locales are:
+%s`, cl)
 
 	if countryCode == "help" {
 		err := JSON(
