@@ -61,4 +61,28 @@ func TestDaysBetween(t *testing.T) {
 				formatDate(tt.now), got, tt.want)
 		}
 	}
+
+}
+
+func TestNextFestivus(t *testing.T) {
+	today := fakeDate(2016, 12, 20)
+	want := fakeDate(2016, 12, 23)
+	if got := NextFestivus(today); got != want {
+		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+			formatDate(today),
+			formatDate(got),
+			formatDate(want),
+		)
+	}
+
+	// today if after festivus in current year
+	today = fakeDate(2016, 12, 29)
+	want = fakeDate(2017, 12, 23)
+	if got := NextFestivus(today); got != want {
+		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+			formatDate(today),
+			formatDate(got),
+			formatDate(want),
+		)
+	}
 }
