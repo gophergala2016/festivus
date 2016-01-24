@@ -109,74 +109,74 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	// Useful when encountering issues
 	api.SetDebug(true)
 
-	params := slack.PostMessageParameters{}
-	attachment := slack.Attachment{
-		AuthorName: "FestivusBot",
-		Pretext:    "some pretext",
-		Text:       "some text",
-		// Uncomment the following part to send a field too
-		/*
-			Fields: []slack.AttachmentField{
-				slack.AttachmentField{
-					Title: "a",
-					Value: "no",
-				},
-			},
-		*/
-	}
-	params.Attachments = []slack.Attachment{attachment}
-	channelID, timestamp, err := api.PostMessage("C0JAT1RHS", "Hello world", params)
-	if err != nil {
-		fmt.Printf("%s\n", err)
-		return
-	}
-	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
+	// params := slack.PostMessageParameters{}
+	// attachment := slack.Attachment{
+	// 	AuthorName: "FestivusBot",
+	// 	Pretext:    "some pretext",
+	// 	Text:       "some text",
+	// 	// Uncomment the following part to send a field too
+	// 	/*
+	// 		Fields: []slack.AttachmentField{
+	// 			slack.AttachmentField{
+	// 				Title: "a",
+	// 				Value: "no",
+	// 			},
+	// 		},
+	// 	*/
+	// }
+	// params.Attachments = []slack.Attachment{attachment}
+	// channelID, timestamp, err := api.PostMessage("C0JAT1RHS", "Hello world", params)
+	// if err != nil {
+	// 	fmt.Printf("%s\n", err)
+	// 	return
+	// }
+	// fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
 
-	w.Write([]byte(fmt.Sprintf("OAuth successful for team. lets output something for slack and block execution ... ")))
+	// w.Write([]byte(fmt.Sprintf("OAuth successful for team. lets output something for slack and block execution ... ")))
 
 	return
 
-	rtm := api.NewRTM()
-	go rtm.ManageConnection()
+	// rtm := api.NewRTM()
+	// 	go rtm.ManageConnection()
 
-Loop:
-	for {
-		select {
-		case msg := <-rtm.IncomingEvents:
-			fmt.Print("Event Received: ")
-			switch ev := msg.Data.(type) {
-			case *slack.HelloEvent:
-				// Ignore hello
+	// Loop:
+	// 	for {
+	// 		select {
+	// 		case msg := <-rtm.IncomingEvents:
+	// 			fmt.Print("Event Received: ")
+	// 			switch ev := msg.Data.(type) {
+	// 			case *slack.HelloEvent:
+	// 				// Ignore hello
 
-			case *slack.ConnectedEvent:
-				fmt.Println("Infos:", ev.Info)
-				fmt.Println("Connection counter:", ev.ConnectionCount)
-				// Replace #general with your Channel ID
-				rtm.SendMessage(rtm.NewOutgoingMessage("Hello world", "#general"))
+	// 			case *slack.ConnectedEvent:
+	// 				fmt.Println("Infos:", ev.Info)
+	// 				fmt.Println("Connection counter:", ev.ConnectionCount)
+	// 				// Replace #general with your Channel ID
+	// 				rtm.SendMessage(rtm.NewOutgoingMessage("Hello world", "#general"))
 
-			case *slack.MessageEvent:
-				fmt.Printf("Message: %v\n", ev)
+	// 			case *slack.MessageEvent:
+	// 				fmt.Printf("Message: %v\n", ev)
 
-			case *slack.PresenceChangeEvent:
-				fmt.Printf("Presence Change: %v\n", ev)
+	// 			case *slack.PresenceChangeEvent:
+	// 				fmt.Printf("Presence Change: %v\n", ev)
 
-			case *slack.LatencyReport:
-				fmt.Printf("Current latency: %v\n", ev.Value)
+	// 			case *slack.LatencyReport:
+	// 				fmt.Printf("Current latency: %v\n", ev.Value)
 
-			case *slack.RTMError:
-				fmt.Printf("Error: %s\n", ev.Error())
+	// 			case *slack.RTMError:
+	// 				fmt.Printf("Error: %s\n", ev.Error())
 
-			case *slack.InvalidAuthEvent:
-				fmt.Printf("Invalid credentials")
-				break Loop
+	// 			case *slack.InvalidAuthEvent:
+	// 				fmt.Printf("Invalid credentials")
+	// 				break Loop
 
-			default:
+	// 			default:
 
-				// Ignore other events..
-				// fmt.Printf("Unexpected: %v\n", msg.Data)
-			}
-		}
-	}
+	// 				// Ignore other events..
+	// 				// fmt.Printf("Unexpected: %v\n", msg.Data)
+	// 			}
+	// 		}
+	// 	}
 
 }
 
@@ -231,7 +231,17 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	//     ]
 	// }
 
-	err := JSON(w, http.StatusOK, "festivusCmd fired, sir.")
+	daysTillFestivus := Festivus(time.Now())
+	festivusDay := FestivusDate(time.Now())
+
+	err := JSON(
+		w,
+		http.StatusOK,
+		struct {
+			text string
+		}{
+			fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
+		})
 	if err != nil {
 		writeError(w, 500, err.Error())
 		return
@@ -276,13 +286,19 @@ func DaysBetween(from, to time.Time) int {
 
 // Festivus returns number of days from to today to festivus
 func Festivus(today time.Time) int {
+	festDate := FestivusDate(today)
+	return DaysBetween(today, festDate)
+}
 
+// FestivusDate
+func FestivusDate(today time.Time) (festivus time.Time) {
 	year := time.Now().Year()
 
-	festDate := time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
-	if today.After(festDate) {
+	festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
+	if today.After(festivus) {
 		year++
-		festDate = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
+		festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
 	}
-	return DaysBetween(today, festDate)
+
+	return
 }
