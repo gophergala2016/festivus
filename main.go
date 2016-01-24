@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"math"
 	"net/http"
@@ -29,6 +30,8 @@ var (
 	ApplicationJSON            = "application/json"
 	ApplicationJSONCharsetUTF8 = ApplicationJSON + "; " + CharsetUTF8
 	ContentType                = "Content-Type"
+
+	availableLocaleList []string
 )
 
 type state struct {
@@ -258,6 +261,32 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 	countryCode := strings.Trim(params, " ")
 
+	availableLocaleList, err := getHolidayLocales()
+	if err != nil {
+		log.Fatal("Cant get list of locales. Exiting.")
+	}
+
+	helpTxt := "List of available holiday locales:\n"
+	for _, loc := range availableLocaleList {
+		helpTxt += fmt.Sprintf("/festivus %s\n", loc)
+	}
+
+	if countryCode == "help" {
+		err := JSON(
+			w,
+			http.StatusOK,
+			struct {
+				Text string `json:"text"`
+			}{
+				fmt.Sprintf("%s", helpTxt),
+			})
+
+		if err != nil {
+			writeError(w, 500, err.Error())
+		}
+		return
+	}
+
 	curDir, err := os.Getwd()
 	if err != nil {
 		writeError(w, 500, err.Error())
@@ -314,7 +343,39 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	return
 }
 
+func getHolidayLocales() (localeList []string, err error) {
+	curDir, err := os.Getwd()
+	if err != nil {
+		return nil, err
+	}
+	calPath := curDir + "/calendars/"
+	files, err := ioutil.ReadDir(calPath)
+	if err != nil {
+		return nil, err
+	}
+	for _, f := range files {
+		fname := strings.Trim(f.Name(), ".txt")
+		// fmt.Println(fname)
+		localeList = append(localeList, fname)
+	}
+	return localeList, nil
+}
+
 func main() {
+
+	// availableLocaleList, err := getHolidayLocales()
+	// if err != nil {
+	// 	log.Fatal("Cant get list of locales. Exiting.")
+	// }
+
+	// a := "List of available holiday locales:\n"
+	// for _, loc := range availableLocaleList {
+	// 	a += fmt.Sprintf("/festivus %s\n", loc)
+	// }
+	// fmt.Printf("%s", a)
+
+	// return
+
 	flag.Parse()
 	if *clientID == "" || *clientSecret == "" {
 		fmt.Print(`
