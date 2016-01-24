@@ -10,9 +10,11 @@ import (
 	"math"
 	"net/http"
 	"os"
+	"strings"
 	"time"
 
 	// "github.com/demisto/slack"
+	"github.com/gophergala2016/festivus/holidays"
 	"github.com/nlopes/slack"
 
 	"golang.org/x/oauth2"
@@ -231,22 +233,85 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	//     ]
 	// }
 
-	daysTillFestivus := Festivus(time.Now())
-	festivusDay := FestivusDate(time.Now())
+	params := r.FormValue("text")
 
-	err := JSON(
-		w,
-		http.StatusOK,
-		struct {
-			Text string `json:"text"`
-		}{
-			fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
-		})
+	// empty call means "days till festivus"
+	if len(params) == 0 {
+		daysTillFestivus := Festivus(time.Now())
+		festivusDay := FestivusDate(time.Now())
+
+		err := JSON(
+			w,
+			http.StatusOK,
+			struct {
+				Text string `json:"text"`
+			}{
+				fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
+			})
+
+		if err != nil {
+			writeError(w, 500, err.Error())
+		}
+
+		return
+	}
+
+	countryCode := strings.Trim(params, " ")
+
+	curDir, err := os.Getwd()
 	if err != nil {
 		writeError(w, 500, err.Error())
 		return
 	}
 
+	calPath := curDir + "/calendars/" + countryCode + ".txt"
+	log.Printf("cal path %q", calPath)
+
+	if _, err := os.Stat(calPath); err != nil && os.IsNotExist(err) {
+		err := JSON(
+			w,
+			http.StatusOK,
+			struct {
+				Text string `json:"text"`
+			}{
+				fmt.Sprintf("Unsupported country %q", countryCode),
+			})
+
+		if err != nil {
+			writeError(w, 500, err.Error())
+		}
+
+		return
+	}
+
+	days, err := holidays.New(countryCode, curDir+"/calendars/")
+	if err != nil {
+		if err != nil {
+			writeError(w, 500, err.Error())
+		}
+
+		return
+	}
+
+	var sDays string
+	for _, d := range days {
+		sDays = fmt.Sprintf("%s\n%s", sDays, d.String())
+	}
+
+	err = JSON(
+		w,
+		http.StatusOK,
+		struct {
+			Text string `json:"text"`
+		}{
+			fmt.Sprintf("%s", sDays),
+		})
+
+	if err != nil {
+		writeError(w, 500, err.Error())
+	}
+
+	return
 }
 
 func main() {
