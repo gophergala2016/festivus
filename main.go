@@ -122,7 +122,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 
 func postMessage(msg string) {
 	m := &slack.PostMessageRequest{
-		AsUser:  true,
+		AsUser:  false, // bot is not user? user should have client special scope ? xxx todo
 		Channel: currChannelID,
 		Text:    msg,
 	}
