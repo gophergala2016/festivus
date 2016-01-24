@@ -37,7 +37,7 @@ func TestNewHday(t *testing.T) {
 	for _, tt := range tests {
 		got, err := NewHday(tt.in)
 		if !reflect.DeepEqual(got, tt.want) || err != nil {
-			t.Errorf("NewHday(%q) = %v, %v; want %v, %v",
+			t.Errorf("NewHday(%q) = %v, %v; want %v, nil",
 				tt.in,
 				got,
 				err,

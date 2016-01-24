@@ -39,6 +39,7 @@ func (h *Hday) String() string {
 	)
 }
 
+// NewHday create Hday, holiday's data holder.
 func NewHday(in string) (Hday, error) {
 	empty := Hday{}
 	fs := strings.Split(in, "\t")
