@@ -1,0 +1,39 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-01	00:00	2016-02-02	00:00	Day of Remembrance and Respect to Victims of the Communist Regime
+2016-03-01	00:00	2016-03-02	00:00	Baba Marta
+2016-03-03	00:00	2016-03-04	00:00	Liberation Day
+2016-03-27	00:00	2016-03-28	00:00	Daylight Saving Time starts
+2016-04-29	00:00	2016-04-30	00:00	Good Friday
+2016-04-30	00:00	2016-05-01	00:00	Holy Saturday
+2016-05-01	00:00	2016-05-02	00:00	Labor Day
+2016-05-01	00:00	2016-05-02	00:00	Easter Sunday
+2016-05-02	00:00	2016-05-03	00:00	Easter Monday
+2016-05-06	00:00	2016-05-07	00:00	St. George's Day
+2016-05-24	00:00	2016-05-25	00:00	Culture and Literacy Day
+2016-09-06	00:00	2016-09-07	00:00	Unification Day
+2016-09-22	00:00	2016-09-23	00:00	Independence Day
+2016-10-30	00:00	2016-10-31	00:00	Daylight Saving Time ends
+2016-11-01	00:00	2016-11-02	00:00	Revival Day
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Second day of Christmas
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-02-01	00:00	2017-02-02	00:00	Day of Remembrance and Respect to Victims of the Communist Regime
+2017-03-01	00:00	2017-03-02	00:00	Baba Marta
+2017-03-03	00:00	2017-03-04	00:00	Liberation Day
+2017-03-26	00:00	2017-03-27	00:00	Daylight Saving Time starts
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-15	00:00	2017-04-16	00:00	Holy Saturday
+2017-04-16	00:00	2017-04-17	00:00	Easter Sunday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday
+2017-05-01	00:00	2017-05-02	00:00	Labor Day
+2017-05-06	00:00	2017-05-07	00:00	St. George's Day
+2017-05-24	00:00	2017-05-25	00:00	Culture and Literacy Day
+2017-09-06	00:00	2017-09-07	00:00	Unification Day
+2017-09-22	00:00	2017-09-23	00:00	Independence Day
+2017-10-29	00:00	2017-10-30	00:00	Daylight Saving Time ends
+2017-11-01	00:00	2017-11-02	00:00	Revival Day
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-26	00:00	2017-12-27	00:00	Second day of Christmas
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

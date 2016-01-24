@@ -1,0 +1,33 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-02-08	00:00	2016-02-09	00:00	Chinese Lunar New Year's Day
+2016-03-09	00:00	2016-03-10	00:00	Bali's Day of Silence and Hindu New Year
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-27	00:00	2016-03-28	00:00	Easter Sunday
+2016-05-01	00:00	2016-05-02	00:00	International Labor Day
+2016-05-05	00:00	2016-05-06	00:00	Ascension Day of Jesus Christ
+2016-05-06	00:00	2016-05-07	00:00	Ascension of the Prophet Muhammad
+2016-05-22	00:00	2016-05-23	00:00	Waisak Day (Buddha's Anniversary)
+2016-07-06	00:00	2016-07-07	00:00	Joint Holiday After Idul Fitri
+2016-07-07	00:00	2016-07-08	00:00	Second Joint Holiday After Idul Fitri
+2016-08-17	00:00	2016-08-18	00:00	Indonesian Independence Day
+2016-09-12	00:00	2016-09-13	00:00	Muslim Day of Sacrifice (Idul Adha)
+2016-10-02	00:00	2016-10-03	00:00	Muharram/Islamic New Year
+2016-10-30	00:00	2016-10-31	00:00	Diwali/Deepavali
+2016-12-12	00:00	2016-12-13	00:00	The Prophet Muhammad's Birthday
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas Day
+2016-12-26	00:00	2016-12-27	00:00	Day after Christmas Day
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-28	00:00	2017-01-29	00:00	Chinese Lunar New Year's Day
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-16	00:00	2017-04-17	00:00	Easter Sunday
+2017-04-24	00:00	2017-04-25	00:00	Ascension of the Prophet Muhammad
+2017-05-01	00:00	2017-05-02	00:00	International Labor Day
+2017-05-25	00:00	2017-05-26	00:00	Ascension Day of Jesus Christ
+2017-08-17	00:00	2017-08-18	00:00	Indonesian Independence Day
+2017-10-19	00:00	2017-10-20	00:00	Diwali/Deepavali
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

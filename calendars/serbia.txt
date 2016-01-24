@@ -1,0 +1,39 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-02	00:00	2016-01-03	00:00	Second Day of New Year's Day
+2016-01-07	00:00	2016-01-08	00:00	Christmas Day
+2016-01-14	00:00	2016-01-15	00:00	Orthodox New Year
+2016-01-27	00:00	2016-01-28	00:00	Spirituality Day/St Sava's Day
+2016-02-15	00:00	2016-02-16	00:00	Statehood Day of the Republic of Serbia
+2016-02-16	00:00	2016-02-17	00:00	Statehood Day of the Republic of Serbia (Day 2)
+2016-04-22	00:00	2016-04-23	00:00	Holocaust Remembrance Day
+2016-04-29	00:00	2016-04-30	00:00	Orthodox Good Friday
+2016-04-30	00:00	2016-05-01	00:00	Orthodox Holy Saturday
+2016-05-01	00:00	2016-05-02	00:00	Labor holiday
+2016-05-01	00:00	2016-05-02	00:00	Orthodox Easter Day
+2016-05-02	00:00	2016-05-03	00:00	Orthodox Easter Monday
+2016-05-02	00:00	2016-05-03	00:00	Labor holiday second day
+2016-05-09	00:00	2016-05-10	00:00	Victory Day
+2016-06-28	00:00	2016-06-29	00:00	St Vitus Day
+2016-10-21	00:00	2016-10-22	00:00	World War II Victims Remembrance Day
+2016-11-11	00:00	2016-11-12	00:00	Armistice Day
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	Second Day of New Year's Day
+2017-01-07	00:00	2017-01-08	00:00	Christmas Day
+2017-01-14	00:00	2017-01-15	00:00	Orthodox New Year
+2017-01-27	00:00	2017-01-28	00:00	Spirituality Day/St Sava's Day
+2017-02-15	00:00	2017-02-16	00:00	Statehood Day of the Republic of Serbia
+2017-02-16	00:00	2017-02-17	00:00	Statehood Day of the Republic of Serbia (Day 2)
+2017-04-14	00:00	2017-04-15	00:00	Orthodox Good Friday
+2017-04-15	00:00	2017-04-16	00:00	Orthodox Holy Saturday
+2017-04-16	00:00	2017-04-17	00:00	Orthodox Easter Day
+2017-04-17	00:00	2017-04-18	00:00	Orthodox Easter Monday
+2017-04-22	00:00	2017-04-23	00:00	Holocaust Remembrance Day
+2017-05-01	00:00	2017-05-02	00:00	Labor holiday
+2017-05-02	00:00	2017-05-03	00:00	Labor holiday second day
+2017-05-09	00:00	2017-05-10	00:00	Victory Day
+2017-06-28	00:00	2017-06-29	00:00	St Vitus Day
+2017-10-21	00:00	2017-10-22	00:00	World War II Victims Remembrance Day
+2017-11-11	00:00	2017-11-12	00:00	Armistice Day
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day

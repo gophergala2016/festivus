@@ -1,0 +1,100 @@
+2016-01-01	00:00	2016-01-02	00:00	New Year's Day
+2016-01-02	00:00	2016-01-03	00:00	Day After New Year’s Day (Quebec)
+2016-01-06	00:00	2016-01-07	00:00	Epiphany
+2016-02-02	00:00	2016-02-03	00:00	Groundhog Day
+2016-02-08	00:00	2016-02-09	00:00	Family Day (British Columbia)
+2016-02-14	00:00	2016-02-15	00:00	Valentine's Day
+2016-02-15	00:00	2016-02-16	00:00	Family Day (regional holiday)
+2016-02-15	00:00	2016-02-16	00:00	Islander Day (Prince Edward Island)
+2016-02-15	00:00	2016-02-16	00:00	Nova Scotia Heritage Day (Nova Scotia)
+2016-02-15	00:00	2016-02-16	00:00	Louis Riel Day (Manitoba)
+2016-02-26	00:00	2016-02-27	00:00	Yukon Heritage Day (Yukon)
+2016-03-13	00:00	2016-03-14	00:00	Daylight Saving Time starts
+2016-03-14	00:00	2016-03-15	00:00	Commonwealth Day
+2016-03-14	00:00	2016-03-15	00:00	St. Patrick's Day (Newfoundland and Labrador)
+2016-03-17	00:00	2016-03-18	00:00	St. Patrick's Day
+2016-03-25	00:00	2016-03-26	00:00	Good Friday
+2016-03-27	00:00	2016-03-28	00:00	Easter Sunday
+2016-03-28	00:00	2016-03-29	00:00	Easter Monday (regional holiday)
+2016-04-06	00:00	2016-04-07	00:00	National Tartan Day
+2016-04-09	00:00	2016-04-10	00:00	Vimy Ridge Day
+2016-04-25	00:00	2016-04-26	00:00	St. George's Day (Newfoundland and Labrador)
+2016-05-23	00:00	2016-05-24	00:00	National Patriots' Day (Quebec)
+2016-05-23	00:00	2016-05-24	00:00	Victoria Day (regional holiday)
+2016-06-21	00:00	2016-06-22	00:00	National Aboriginal Day (Northwest Territories)
+2016-06-24	00:00	2016-06-25	00:00	St. Jean Baptiste Day (Quebec)
+2016-06-27	00:00	2016-06-28	00:00	Discovery Day (Newfoundland and Labrador)
+2016-07-01	00:00	2016-07-02	00:00	Canada Day
+2016-07-09	00:00	2016-07-10	00:00	Nunavut Day (Nunavut)
+2016-07-11	00:00	2016-07-12	00:00	Orangemen's Day (Newfoundland and Labrador)
+2016-08-01	00:00	2016-08-02	00:00	Heritage Day in Alberta
+2016-08-01	00:00	2016-08-02	00:00	British Columbia Day (British Columbia)
+2016-08-01	00:00	2016-08-02	00:00	New Brunswick Day (New Brunswick)
+2016-08-01	00:00	2016-08-02	00:00	Terry Fox Day (Manitoba)
+2016-08-01	00:00	2016-08-02	00:00	Civic/Provincial Day (regional holiday)
+2016-08-01	00:00	2016-08-02	00:00	Natal Day (Nova Scotia)
+2016-08-03	00:00	2016-08-04	00:00	The Royal St John's Regatta (St John's) (Newfoundland and Labrador)
+2016-08-15	00:00	2016-08-16	00:00	Discovery Day (Yukon)
+2016-08-19	00:00	2016-08-20	00:00	Gold Cup Parade (Prince Edward Island)
+2016-09-05	00:00	2016-09-06	00:00	Labour Day (regional holiday)
+2016-10-10	00:00	2016-10-11	00:00	Thanksgiving Day (regional holiday)
+2016-10-31	00:00	2016-11-01	00:00	Halloween
+2016-11-06	00:00	2016-11-07	00:00	Daylight Saving Time ends
+2016-11-11	00:00	2016-11-12	00:00	Remembrance Day (regional holiday)
+2016-12-11	00:00	2016-12-12	00:00	Anniversary of the Statute of Westminster
+2016-12-24	00:00	2016-12-25	00:00	Christmas Eve
+2016-12-25	00:00	2016-12-26	00:00	Christmas
+2016-12-26	00:00	2016-12-27	00:00	Boxing Day (regional holiday)
+2016-12-31	00:00	2017-01-01	00:00	New Year's Eve
+2017-01-01	00:00	2017-01-02	00:00	New Year's Day
+2017-01-02	00:00	2017-01-03	00:00	Day After New Year’s Day (Quebec)
+2017-01-02	00:00	2017-01-03	00:00	New Year's Day observed
+2017-01-06	00:00	2017-01-07	00:00	Epiphany
+2017-02-02	00:00	2017-02-03	00:00	Groundhog Day
+2017-02-13	00:00	2017-02-14	00:00	Family Day (British Columbia)
+2017-02-14	00:00	2017-02-15	00:00	Valentine's Day
+2017-02-20	00:00	2017-02-21	00:00	Louis Riel Day (Manitoba)
+2017-02-20	00:00	2017-02-21	00:00	Family Day (regional holiday)
+2017-02-20	00:00	2017-02-21	00:00	Islander Day (Prince Edward Island)
+2017-02-20	00:00	2017-02-21	00:00	Nova Scotia Heritage Day (Nova Scotia)
+2017-02-24	00:00	2017-02-25	00:00	Yukon Heritage Day (Yukon)
+2017-03-12	00:00	2017-03-13	00:00	Daylight Saving Time starts
+2017-03-13	00:00	2017-03-14	00:00	Commonwealth Day
+2017-03-17	00:00	2017-03-18	00:00	St. Patrick's Day
+2017-03-20	00:00	2017-03-21	00:00	St. Patrick's Day (Newfoundland and Labrador)
+2017-04-06	00:00	2017-04-07	00:00	National Tartan Day
+2017-04-09	00:00	2017-04-10	00:00	Vimy Ridge Day
+2017-04-14	00:00	2017-04-15	00:00	Good Friday
+2017-04-16	00:00	2017-04-17	00:00	Easter Sunday
+2017-04-17	00:00	2017-04-18	00:00	Easter Monday (regional holiday)
+2017-04-24	00:00	2017-04-25	00:00	St. George's Day (Newfoundland and Labrador)
+2017-05-22	00:00	2017-05-23	00:00	National Patriots' Day (Quebec)
+2017-05-22	00:00	2017-05-23	00:00	Victoria Day (regional holiday)
+2017-06-21	00:00	2017-06-22	00:00	National Aboriginal Day (Northwest Territories)
+2017-06-24	00:00	2017-06-25	00:00	St. Jean Baptiste Day (Quebec)
+2017-06-26	00:00	2017-06-27	00:00	Discovery Day (Newfoundland and Labrador)
+2017-07-01	00:00	2017-07-02	00:00	Canada Day
+2017-07-03	00:00	2017-07-04	00:00	Canada Day - additional statutory holiday
+2017-07-09	00:00	2017-07-10	00:00	Nunavut Day (Nunavut)
+2017-07-10	00:00	2017-07-11	00:00	Nunavut Day observed (Nunavut)
+2017-07-10	00:00	2017-07-11	00:00	Orangemen's Day (Newfoundland and Labrador)
+2017-08-02	00:00	2017-08-03	00:00	The Royal St John's Regatta (St John's) (Newfoundland and Labrador)
+2017-08-07	00:00	2017-08-08	00:00	Heritage Day in Alberta
+2017-08-07	00:00	2017-08-08	00:00	British Columbia Day (British Columbia)
+2017-08-07	00:00	2017-08-08	00:00	New Brunswick Day (New Brunswick)
+2017-08-07	00:00	2017-08-08	00:00	Terry Fox Day (Manitoba)
+2017-08-07	00:00	2017-08-08	00:00	Civic/Provincial Day (regional holiday)
+2017-08-07	00:00	2017-08-08	00:00	Natal Day (Nova Scotia)
+2017-08-18	00:00	2017-08-19	00:00	Gold Cup Parade (Prince Edward Island)
+2017-08-21	00:00	2017-08-22	00:00	Discovery Day (Yukon)
+2017-09-04	00:00	2017-09-05	00:00	Labour Day (regional holiday)
+2017-10-09	00:00	2017-10-10	00:00	Thanksgiving Day (regional holiday)
+2017-10-31	00:00	2017-11-01	00:00	Halloween
+2017-11-05	00:00	2017-11-06	00:00	Daylight Saving Time ends
+2017-11-11	00:00	2017-11-12	00:00	Remembrance Day (regional holiday)
+2017-12-11	00:00	2017-12-12	00:00	Anniversary of the Statute of Westminster
+2017-12-24	00:00	2017-12-25	00:00	Christmas Eve
+2017-12-25	00:00	2017-12-26	00:00	Christmas
+2017-12-26	00:00	2017-12-27	00:00	Boxing Day (regional holiday)
+2017-12-31	00:00	2018-01-01	00:00	New Year's Eve
+2018-01-01	00:00	2018-01-02	00:00	New Year's Day
