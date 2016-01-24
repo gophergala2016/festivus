@@ -99,6 +99,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	s, err = slack.New(slack.SetToken(token.AccessToken))
+
 	if err != nil {
 		writeError(w, 500, err.Error())
 		return
@@ -110,18 +111,25 @@ func auth(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	w.Write([]byte(fmt.Sprintf("OAuth successful for team %s and user %s", test.Team, test.User)))
-	log.Printf("%#v", test)
+	log.Printf("authTest: %#v", test)
 
-	in := make(chan *slack.Message)
-	info, err = s.RTMStart("", in, nil)
-	if err == nil {
-		log.Println("Reconnected...")
-	} else {
-		close(in)
+	chanList, err := s.ChannelList(false)
+	if err != nil {
+		log.Printf("Unable to retrieve a list of channels - %v", err)
+		return
 	}
+	log.Printf("chanlist: %#v", chanList)
 
-	currChannelID = channelID("gophergala")
-	postMessage("Hello world!")
+	// in := make(chan *slack.Message)
+	// info, err = s.RTMStart("", in, nil)
+	// if err == nil {
+	// 	log.Println("Reconnected...")
+	// } else {
+	// 	close(in)
+	// }
+
+	// currChannelID = channelID("gophergala")
+	// postMessage("Hello world!")
 }
 
 func postMessage(msg string) {
