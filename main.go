@@ -134,6 +134,8 @@ func auth(w http.ResponseWriter, r *http.Request) {
 
 	w.Write([]byte(fmt.Sprintf("OAuth successful for team. lets output something for slack and block execution ... ")))
 
+	return
+
 	rtm := api.NewRTM()
 	go rtm.ManageConnection()
 
