@@ -43,3 +43,46 @@ func TestParseDate(t *testing.T) {
 			in, formatDate(got), err, formatDate(want))
 	}
 }
+
+func TestDaysBetween(t *testing.T) {
+	since := fakeDate(2012, 2, 3)
+	var tests = []struct {
+		now  time.Time
+		want int
+	}{
+		{fakeDate(2014, 3, 21), 777},
+		{fakeDate(2014, 7, 10), 888},
+		{fakeDate(2014, 10, 29), 999},
+	}
+	for _, tt := range tests {
+		if got := DaysBetween(since, tt.now); got != tt.want {
+			t.Errorf("DaysBetween(%v, %v) = %v; want %v",
+				formatDate(since),
+				formatDate(tt.now), got, tt.want)
+		}
+	}
+
+}
+
+func TestNextFestivus(t *testing.T) {
+	today := fakeDate(2016, 12, 20)
+	want := fakeDate(2016, 12, 23)
+	if got := NextFestivus(today); got != want {
+		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+			formatDate(today),
+			formatDate(got),
+			formatDate(want),
+		)
+	}
+
+	// today if after festivus in current year
+	today = fakeDate(2016, 12, 29)
+	want = fakeDate(2017, 12, 23)
+	if got := NextFestivus(today); got != want {
+		t.Errorf("NextFestivus (today: %v) = %v; want %v",
+			formatDate(today),
+			formatDate(got),
+			formatDate(want),
+		)
+	}
+}

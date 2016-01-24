@@ -62,7 +62,7 @@ func addToSlack(w http.ResponseWriter, r *http.Request) {
 		// incoming-webhook - post from your app to a single Slack channel.
 		// za rtm kazu da treba rtm:stream pa kazu da je unknown..hmm, probam sa client.
 		// Scopes:      []string{"commands", "bot", "chat:write:bot", "client"}, // za ovo javlja da mixam depresiated scopove argh...
-		Scopes:      []string{"incoming-webhook", "commands", "bot", "chat:write:bot"}, // jel moguce da je "samo" "client" dovoljno?
+		Scopes:      []string{"incoming-webhook", "commands"}, // jel moguce da je "samo" "client" dovoljno? | maknuto "bot", "chat:write:bot"
 		RedirectURL: "https://festivus.nivas.hr/auth",
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  "https://slack.com/oauth/authorize",
@@ -132,7 +132,7 @@ func auth(w http.ResponseWriter, r *http.Request) {
 	// }
 	// fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
 
-	// w.Write([]byte(fmt.Sprintf("OAuth successful for team. lets output something for slack and block execution ... ")))
+	w.Write([]byte(fmt.Sprintf("Install done.")))
 
 	return
 
@@ -238,7 +238,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 		w,
 		http.StatusOK,
 		struct {
-			text string
+			Text string `json:"text"`
 		}{
 			fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
 		})
