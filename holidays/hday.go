@@ -39,29 +39,30 @@ func (h *Hday) String() string {
 	)
 }
 
-func NewHday(in string) (*Hday, error) {
+func NewHday(in string) (Hday, error) {
+	empty := Hday{}
 	fs := strings.Split(in, "\t")
 	if len(fs) != 5 {
-		return nil, errors.New("hday: invalid data row")
+		return empty, errors.New("hday: invalid data row")
 	}
 
 	// start date
 	d, err := parseDate(fs[0])
 	if err != nil {
-		return nil, errors.New("hday: invalid start date")
+		return empty, errors.New("hday: invalid start date")
 	}
 
 	// end date
 	ed, err := parseDate(fs[2])
 	if err != nil {
-		return nil, errors.New("hday: invalid end date")
+		return empty, errors.New("hday: invalid end date")
 	}
 
 	// name
 	n := fs[4]
 
 	// valid holiday
-	h := &Hday{
+	h := Hday{
 		date:    d,
 		endDate: ed,
 		name:    n,

@@ -6,8 +6,8 @@ import (
 	"time"
 )
 
-func fakeHday(d, ed time.Time, n string) *Hday {
-	return &Hday{
+func fakeHday(d, ed time.Time, n string) Hday {
+	return Hday{
 		date:    d,
 		endDate: ed,
 		name:    n,
@@ -17,7 +17,7 @@ func fakeHday(d, ed time.Time, n string) *Hday {
 func TestNewHday(t *testing.T) {
 	tests := []struct {
 		in   string
-		want *Hday
+		want Hday
 	}{
 		{"2016-01-01	00:00	2016-01-02	00:00	New Year's Day",
 			fakeHday(
@@ -48,6 +48,7 @@ func TestNewHday(t *testing.T) {
 }
 
 func TestNewHday_errors(t *testing.T) {
+
 	tests := []struct {
 		in string
 	}{
@@ -60,10 +61,9 @@ func TestNewHday_errors(t *testing.T) {
 		{""},
 	}
 	for _, tt := range tests {
-		if got, err := NewHday(tt.in); got != nil || err == nil {
-			t.Errorf("NewHday(%q) = %v, %v; want nil, error",
+		if _, err := NewHday(tt.in); err == nil {
+			t.Errorf("NewHday(%q) = _, %v; want _, error",
 				tt.in,
-				got,
 				err,
 			)
 		}
