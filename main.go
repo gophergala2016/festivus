@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"math"
 	"net/http"
 	"os"
 	"strings"
@@ -240,8 +239,8 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 	// empty call means "days till festivus"
 	if len(params) == 0 {
-		daysTillFestivus := Festivus(time.Now())
-		festivusDay := FestivusDate(time.Now())
+		daysTillFestivus := holidays.DaysToFestivus(time.Now())
+		festivusDay := holidays.NextFestivus(time.Now())
 
 		err := JSON(
 			w,
@@ -326,7 +325,11 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 	var sDays string
 	for _, d := range days {
-		sDays = fmt.Sprintf("%s\n%s %s", sDays, d.Date().Format("02.01.2016."), d.Name())
+
+		tillDay := holidays.DaysBetween(time.Now(), d.Date())
+
+		sDays = fmt.Sprintf("%s\n%d days til *%s* (%s)", sDays, tillDay, d.Name(), d.Date().Format("02.01.2006."))
+
 	}
 
 	err = JSON(
@@ -402,31 +405,5 @@ func JSON(w http.ResponseWriter, code int, i interface{}) (err error) {
 	w.Header().Set(ContentType, ApplicationJSONCharsetUTF8)
 	w.WriteHeader(code)
 	w.Write(b)
-	return
-}
-
-// DaysBetween returns days between dates.
-func DaysBetween(from, to time.Time) int {
-	// convert diff hours to days
-	d := to.Sub(from).Hours() / 24
-	return int(math.Abs(d))
-}
-
-// Festivus returns number of days from to today to festivus
-func Festivus(today time.Time) int {
-	festDate := FestivusDate(today)
-	return DaysBetween(today, festDate)
-}
-
-// FestivusDate
-func FestivusDate(today time.Time) (festivus time.Time) {
-	year := time.Now().Year()
-
-	festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
-	if today.After(festivus) {
-		year++
-		festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
-	}
-
 	return
 }
