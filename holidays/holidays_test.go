@@ -43,3 +43,13 @@ func TestParseDate(t *testing.T) {
 			in, formatDate(got), err, formatDate(want))
 	}
 }
+
+func TestFileScanner(t *testing.T) {
+	in := "testdata/hr.txt"
+	if _, err := fileScanner(in); err != nil {
+		t.Errorf("fileScanner(%q) = _, %v; want nil", in, err)
+	}
+	if _, err := fileScanner("invalidpath"); err == nil {
+		t.Error("fileScanner(\"invalidpath\") = _, <nil>; want error")
+	}
+}

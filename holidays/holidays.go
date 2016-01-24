@@ -1,6 +1,11 @@
 package holidays
 
-import "time"
+import (
+	"bufio"
+	"bytes"
+	"io/ioutil"
+	"time"
+)
 
 // midnight returns date with zero time.
 func midnight(t time.Time) time.Time {
@@ -14,4 +19,13 @@ const ISO8601DateFormat = "2006-01-02"
 func parseDate(s string) (time.Time, error) {
 	d, err := time.Parse(ISO8601DateFormat, s)
 	return midnight(d), err
+}
+
+// fileScanner converts file content to scanner.
+func fileScanner(path string) (*bufio.Scanner, error) {
+	c, err := ioutil.ReadFile(path)
+	if err != nil {
+		return nil, err
+	}
+	return bufio.NewScanner(bytes.NewReader(c)), nil
 }
