@@ -1,9 +1,15 @@
 package holidays
 
 import (
+	"fmt"
 	"math"
 	"time"
 )
+
+func New(countryCode, path string) ([]Hday, error) {
+	p := fmt.Sprintf("%s/%s.txt", path, countryCode)
+	return parseFile(p)
+}
 
 // midnight returns date with zero time.
 func midnight(t time.Time) time.Time {
