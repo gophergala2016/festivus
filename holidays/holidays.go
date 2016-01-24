@@ -68,3 +68,15 @@ func ByYear(hlds []Hday, today time.Time) []Hday {
 	}
 	return all
 }
+
+// OnlyFuture filter holidays from time
+func OnlyFuture(hlds []Hday, from time.Time) []Hday {
+	all := []Hday{}
+	for _, h := range hlds {
+		if h.Date().Unix() < from.Unix() {
+			continue
+		}
+		all = append(all, h)
+	}
+	return all
+}

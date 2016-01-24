@@ -8,7 +8,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"log"
-	"math"
 	"net/http"
 	"os"
 	"strings"
@@ -240,8 +239,8 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 
 	// empty call means "days till festivus"
 	if len(params) == 0 {
-		daysTillFestivus := Festivus(time.Now())
-		festivusDay := FestivusDate(time.Now())
+		daysTillFestivus := holidays.DaysToFestivus(time.Now())
+		festivusDay := holidays.NextFestivus(time.Now())
 
 		err := JSON(
 			w,
@@ -249,7 +248,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 			struct {
 				Text string `json:"text"`
 			}{
-				fmt.Sprintf("%d days til Festivus (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
+				fmt.Sprintf("%d days till *Festivus* (%s).", daysTillFestivus, festivusDay.Format("02.01.2006.")),
 			})
 
 		if err != nil {
@@ -266,10 +265,19 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 		log.Fatal("Cant get list of locales. Exiting.")
 	}
 
-	helpTxt := "List of available holiday locales:\n"
-	for _, loc := range availableLocaleList {
-		helpTxt += fmt.Sprintf("/festivus %s\n", loc)
+	var cl string
+	for i, loc := range availableLocaleList {
+		if i == 0 {
+			cl = fmt.Sprintf("%s", loc)
+		} else {
+			cl = fmt.Sprintf("%s, %s", cl, loc)
+		}
 	}
+	helpTxt := fmt.Sprintf(`
+/festivus will tell you when the grate Festivus holiday is.
+/festivus xx will list holiday's for country (xx is local country code)
+List of available holiday locales are:
+%s`, cl)
 
 	if countryCode == "help" {
 		err := JSON(
@@ -322,10 +330,15 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 	}
 
 	days = holidays.ByYear(days, time.Now())
+	days = holidays.OnlyFuture(days, time.Now())
 
 	var sDays string
 	for _, d := range days {
-		sDays = fmt.Sprintf("%s\n%s", sDays, d.String())
+
+		tillDay := holidays.DaysBetween(time.Now(), d.Date())
+
+		sDays = fmt.Sprintf("%s\n%d days till *%s* (%s)", sDays, tillDay, d.Name(), d.Date().Format("02.01.2006."))
+
 	}
 
 	err = JSON(
@@ -401,31 +414,5 @@ func JSON(w http.ResponseWriter, code int, i interface{}) (err error) {
 	w.Header().Set(ContentType, ApplicationJSONCharsetUTF8)
 	w.WriteHeader(code)
 	w.Write(b)
-	return
-}
-
-// DaysBetween returns days between dates.
-func DaysBetween(from, to time.Time) int {
-	// convert diff hours to days
-	d := to.Sub(from).Hours() / 24
-	return int(math.Abs(d))
-}
-
-// Festivus returns number of days from to today to festivus
-func Festivus(today time.Time) int {
-	festDate := FestivusDate(today)
-	return DaysBetween(today, festDate)
-}
-
-// FestivusDate
-func FestivusDate(today time.Time) (festivus time.Time) {
-	year := time.Now().Year()
-
-	festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
-	if today.After(festivus) {
-		year++
-		festivus = time.Date(year, 12, 23, 0, 0, 0, 0, time.UTC)
-	}
-
 	return
 }
