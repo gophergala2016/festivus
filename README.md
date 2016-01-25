@@ -81,8 +81,7 @@ We scoped it to be able to complete it in time and still have fun doing it.
 The list of holidays per country in the world is hard to find. Luckily our friends at Google have added some of holidays into calendar.google.com in form of custom calendars. @luzel found a technique how to fetch them, and @dvrkps built golang helper parser package around the data files.
 ## What we learned48 hours is not much, use it wisely.We should have automated git pull/go build/restart on staging server.## What's next for Festivus
 
-Fork, code cleanup, refractoring should be done absolutely first. We are pretty anxious to transfer it to a form of a Slck Bot and continue exploring Slack platform further,  
-Neural Networks and Collaborative Filtering.
+Fork, code cleanup, refractoring should be done absolutely first; We are pretty anxious to transfer it to a form of a Slck Bot and continue exploring Slack platform further; Neural Networks and Collaborative Filtering.
 
 ## The TeamBig shout to fine Festivus team & supporters:
 
