@@ -12,22 +12,22 @@ Great! Just click the *Add to Slack* button and follow the lights.
 <a href="https://festivus.nivas.hr/add"><img alt="Add to Slack" height="40" width="139" src="https://platform.slack-edge.com/img/add_to_slack.png" srcset="https://platform.slack-edge.com/img/add_to_slack.png 1x, https://platform.slack-edge.com/img/add_to_slack@2x.png 2x"></a>
 Once you have it in Slack:
 
-To see how long till Festivus:
+* To see how long till Festivus:
 /festivus
 
-To see upcoming holidays in United States of America:
+* To see upcoming holidays in United States of America:
 /festivus us 
 
-In France
+* In France
 /festivus fr
 
-In UK
+* In UK
 /festivus uk
 
-In ​India
+* In ​India
 /festivus in
 
-For more locales:
+* For more locales:
 /festivus help
 
 ## InspirationOur team comes from Croatia, young and small European country in which (some say) it’s employed residents value non working holidays a bit more than elsewhere in the world (there are roumours about Italy and France closing in holiday race, feedback needed).
