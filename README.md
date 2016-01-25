@@ -73,7 +73,9 @@ After you have successfully go build, run it:
 ```
 Usage: ./festivus --address ":8080" --client_id "YOUR_ID" --client_secret "YOUR_SECRET"
 ```
-## Challenges we ran intoOriginally, our feature list for Festivus was huge, as you would expect from over the top full blown bot with AI and everything.  After we dug into Slack API, it became pretty clear that 48 hours is not enough for proper implementation of multi team support via websockets and Slack’s Real Time Messaging API.
+## Challenges we ran intoOriginally, our feature list for Festivus was huge, as you would expect from over the top full blown bot with AI and everything.  After we dug into Slack API, it became pretty clear that 48 hours is not enough for proper implementation of multi team support via websockets and Slack’s Real Time Messaging API.
+
+We scoped it to be able to complete it in time and still have fun doing it.
 ## Accomplishments that we are proud ofWe had opportunity to test drive Slack apps, bots, RTM API, commands etc.
 
 The list of holidays per country in the world is hard to find. Luckily our friends at Google have added some of holidays into calendar.google.com in form of custom calendars. @luzel found a technique how to fetch them, and @dvrkps built golang helper parser package around the data files.
