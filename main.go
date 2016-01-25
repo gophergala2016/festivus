@@ -332,7 +332,9 @@ List of available holiday locales are:
 	days = holidays.ByYear(days, time.Now())
 	days = holidays.OnlyFuture(days, time.Now())
 
-	var sDays string
+	allLocales := holidays.Locales()
+
+	sDays := "Displaying holidays for *" + allLocales[countryCode] + "*:\n"
 	for _, d := range days {
 
 		tillDay := holidays.DaysBetween(time.Now(), d.Date())
