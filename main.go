@@ -279,7 +279,7 @@ func festivusCmd(w http.ResponseWriter, r *http.Request) {
 List of available holiday locales are:
 %s`, cl)
 
-	if countryCode == "help" {
+	if countryCode == "help" { // ¯\_(ツ)_/¯
 		err := JSON(
 			w,
 			http.StatusOK,
